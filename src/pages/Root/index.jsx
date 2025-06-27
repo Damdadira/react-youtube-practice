@@ -1,5 +1,11 @@
-import styles from './styles/index.module.css'
+import { Outlet } from 'react-router'
+import Header from '../../shared/ui/Header.jsx'
 
 export default function Root() {
-  return <div>루트페이지 입니다.(navbar + outlet)</div>
+  return (
+    <>
+      <Header />
+      <Outlet />
+    </>
+  )
 }

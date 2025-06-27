@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import Root from '../pages/Root/index.jsx'
 import Error from '../pages/Error/index.jsx'
 import Videos from '../pages/Videos/index.jsx'
+import VideoDetail from '../pages/VideoDetail/index.jsx'
 
 const router = createBrowserRouter([
   {
@@ -14,8 +15,12 @@ const router = createBrowserRouter([
         element: <Videos />
       },
       {
-        path: "/videos",
+        path: "/:keyword",
         element: <Videos />
+      },
+      {
+        path: "/watch/:videoId",
+        element: <VideoDetail />
       }
     ]
     

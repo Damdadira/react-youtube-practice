@@ -1,9 +1,34 @@
+import { createBrowserRouter, RouterProvider } from 'react-router'
+import Root from '../pages/Root/index.jsx'
+import Error from '../pages/Error/index.jsx'
+import Videos from '../pages/Videos/index.jsx'
+import VideoDetail from '../pages/VideoDetail/index.jsx'
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <Error />,
+    children: [
+      {
+        index: true,
+        element: <Videos />
+      },
+      {
+        path: "/:keyword",
+        element: <Videos />
+      },
+      {
+        path: "/watch/:videoId",
+        element: <VideoDetail />
+      }
+    ]
+    
+  }
+])
+
 function App() {
-  return (
-    <>
-      <h1>Home</h1>
-    </>
-  )
+  return <RouterProvider router={router} />
 }
 
 export default App

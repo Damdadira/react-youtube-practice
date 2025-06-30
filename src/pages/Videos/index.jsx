@@ -1,8 +1,29 @@
-import { useParams } from 'react-router'
-import styles from './styles/index.module.css'
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router';
+import { popularData } from '../../features/api/fakeYoutubeApi';
+import styles from './styles/index.module.css';
 
 export default function Videos() {
   const { keyword } = useParams();
+  const [videos, setVideos] = useState([]);
 
-  return <div>비디오 입니다. {keyword}</div>
+  useEffect(() => {
+    popularData().then((res) => 
+      setVideos(res.data.items)
+    );
+  }, []);
+
+  console.log(videos)
+
+  return (
+    <>
+      {videos && (
+        <ul>
+          {videos.map((video) => (
+            <li key={video.id}>{video.snippet.title}</li>
+          ))}
+        </ul>
+      )}
+    </>
+  );
 }

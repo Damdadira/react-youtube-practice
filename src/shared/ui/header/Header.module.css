@@ -16,7 +16,7 @@
 }
 
 .logoText {
-  font-size: var(--font-medium);
+  font-size: var(--font-large);
   font-weight: var(--font-semi-bold);
 }
 
@@ -26,7 +26,7 @@
 }
 
 .formInput {
-  width: 30rem;
+  width: 27rem;
   padding: .4rem 1rem;
   border: 1px solid var(--color-light-gray);
   border-radius: 20px 0 0 20px;
@@ -35,6 +35,7 @@
 
 .formInput:focus {
   outline-color: #999;
+  width: 32rem;
 }
 
 .formButton {

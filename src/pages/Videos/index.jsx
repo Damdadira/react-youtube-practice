@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import VideoCard from '../../entities/video/ui/VideoCard/VideoCard.jsx';
 import { popularData } from '../../features/api/fakeYoutubeApi';
 import styles from './styles/index.module.css';
 
@@ -8,22 +9,18 @@ export default function Videos() {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    popularData().then((res) => 
-      setVideos(res.data.items)
-    );
+    popularData().then((res) => setVideos(res.data.items));
   }, []);
 
-  console.log(videos)
-
   return (
-    <>
+    <div>
       {videos && (
-        <ul>
+        <ul className={styles.videosContainer}>
           {videos.map((video) => (
-            <li key={video.id}>{video.snippet.title}</li>
+            <VideoCard key={video.id} video={video}></VideoCard>
           ))}
         </ul>
       )}
-    </>
+    </div>
   );
 }

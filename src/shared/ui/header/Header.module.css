@@ -1,7 +1,11 @@
 .headerContainer {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: var(--color-white);
+  padding: .6rem .4rem;
+  width: calc(100% - 10px);
 }
 
 .logoContainer {
@@ -17,7 +21,7 @@
 
 .logoText {
   font-size: var(--font-large);
-  font-weight: var(--font-semi-bold);
+  font-weight: var(--weight-semi-bold);
 }
 
 .formContainer {

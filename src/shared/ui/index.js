@@ -1,0 +1,1 @@
+export { Header } from './header'   //./header/index.js와 동일

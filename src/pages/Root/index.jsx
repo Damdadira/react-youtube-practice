@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router'
-import Header from '../../shared/ui/Header.jsx'
+import { Header } from '../../shared/ui'
 
 export default function Root() {
   return (

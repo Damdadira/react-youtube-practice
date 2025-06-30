@@ -1,9 +1,15 @@
-.logo-container {
+.logoContainer {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: .4rem;
 }
 
 .logo {
   width: 48px;
   height: 48px;
+}
+
+.logoText {
+  font-size: var(--font-medium);
+  font-weight: var(--font-semi-bold);
 }

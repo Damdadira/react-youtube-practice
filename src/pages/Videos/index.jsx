@@ -1,8 +1,35 @@
-import { useParams } from 'react-router'
-import styles from './styles/index.module.css'
+import { useParams } from 'react-router';
+import { useQuery } from '@tanstack/react-query';
+import { useYoutubeApi } from '../../app/context/YoutubeApiContext.jsx';
+import VideoCard from '../../entities/video/ui/VideoCard/VideoCard.jsx';
+import styles from './styles/index.module.css';
 
 export default function Videos() {
   const { keyword } = useParams();
+  const { youtube } = useYoutubeApi();
+  const {
+    isLoading,
+    error,
+    data: videos,
+  } = useQuery({
+    queryKey: ['videos', keyword],
+    queryFn: () => youtube.search(keyword)
+  });
 
-  return <div>비디오 입니다. {keyword}</div>
+  return (
+    <div>
+      {isLoading && <div>Loading...</div>}
+      {error && <div>someting is wrong...</div>}
+      {videos && (
+        <ul className={styles.videosContainer}>
+          {videos.map((video) => (
+            <VideoCard
+              key={video.id}
+              video={video}
+            ></VideoCard>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
 }

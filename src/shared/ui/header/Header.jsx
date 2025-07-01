@@ -37,6 +37,11 @@ export function Header() {
     navigate(`/${text}`);
   };
 
+  const handleButtonClick = (e) => {
+    e.preventDefault();
+    alert('준비중입니다.');
+  }
+
   return (
     <header className={styles.wrapper}>
       <div className={styles.headerContainer}>
@@ -66,7 +71,11 @@ export function Header() {
         onMouseUp={handleMouseUp}
         className={styles.buttonContainer}>
         {tabList().map((item) => (
-          <button className={styles.button} key={item}>
+          <button 
+            className={styles.button} 
+            key={item}
+            onClick={handleButtonClick}
+          >
             {item}
           </button>
         ))}

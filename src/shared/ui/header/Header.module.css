@@ -97,6 +97,7 @@
   font-weight: var(--weight-regular);
   min-width: max-content;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .button:first-child {

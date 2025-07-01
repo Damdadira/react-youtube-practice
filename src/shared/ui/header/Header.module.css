@@ -1,11 +1,15 @@
-.headerContainer {
+.wrapper {
   position: fixed;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);;
+  backdrop-filter: blur(48px);
+}
+
+.headerContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--color-white);
-  padding: .6rem .4rem;
-  width: calc(100% - 10px);
+  padding: .6rem 1rem;
 }
 
 .logoContainer {
@@ -64,4 +68,62 @@
   height: 44px;
   border: 1px solid #999;
   border-radius: 100%;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: .6rem;
+  padding: 0rem 2rem .6rem 2rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  cursor: grab;
+  user-select: none;
+  scroll-behavior: auto;
+}
+
+.buttonContainer:active {
+  cursor: grabbing;
+}
+
+.buttonContainer::-webkit-scrollbar {
+  display: none; 
+}
+
+.button {
+  background: #eee;
+  border: none;
+  border-radius: 20px;
+  padding: .4rem 1rem;
+  font-weight: var(--weight-regular);
+  min-width: max-content;
+  flex-shrink: 0;
+}
+
+.button:first-child {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+@media (max-width: 852px) {
+  .formInput {
+    width: 17rem;
+  }
+
+  .formInput:focus {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 682px) {
+  .logoText {
+    display: none;
+  }
+
+  .formInput {
+    width: 10rem;
+  }
+
+  .formInput:focus {
+    width: 13rem;
+  }
 }

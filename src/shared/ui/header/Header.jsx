@@ -1,38 +1,89 @@
-import { useState } from 'react'
-import { Link, useNavigate } from 'react-router'
-import { FiSearch } from "react-icons/fi";
-import styles from './Header.module.css'
-import avatarImage from '../../assets/images/monster.png'
+import { useState, useRef } from 'react';
+import { Link, useNavigate } from 'react-router';
+import { FiSearch } from 'react-icons/fi';
+import styles from './Header.module.css';
+import avatarImage from '../../assets/images/monster.png';
 
 export function Header() {
   const navigate = useNavigate();
   const [text, setText] = useState('');
 
+  const containerRef = useRef(null);
+
+  let isDragging = false;
+  let startX = 0;
+  let scrollLeft = 0;
+
+  const handleMouseDown = (e) => {
+    isDragging = true;
+    startX = e.pageX - containerRef.current.offsetLeft;
+    scrollLeft = containerRef.current.scrollLeft;
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - containerRef.current.offsetLeft;
+    const walk = x - startX;
+    containerRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  const handleMouseUp = () => {
+    isDragging = false;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     navigate(`/${text}`);
-  }
+  };
 
   return (
-    <header className={styles.headerContainer}>
-      <Link to='/' className={styles.logoContainer}>
-        <img
-          className={styles.logo} 
-          src='/public/youtube.png' 
-          alt='logo' />
-        <span className={styles.logoText}>YoungTube</span>
-      </Link>
-      <form className={styles.formContainer} onSubmit={handleSubmit}>
-        <input 
-          type='text'
-          placeholder='검색'
-          className={styles.formInput}
-          value={text} 
-          onChange={(e) => setText(e.target.value)} 
-        />
-        <button type='submit' className={styles.formButton}><FiSearch /></button>
-      </form>
-      <img className={styles.avatarImage} src={avatarImage} alt='avatar' />
+    <header className={styles.wrapper}>
+      <div className={styles.headerContainer}>
+        <Link to="/" className={styles.logoContainer}>
+          <img className={styles.logo} src="/public/youtube.png" alt="logo" />
+          <span className={styles.logoText}>YoungTube</span>
+        </Link>
+        <form className={styles.formContainer} onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="검색"
+            className={styles.formInput}
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+          />
+          <button type="submit" className={styles.formButton}>
+            <FiSearch />
+          </button>
+        </form>
+        <img className={styles.avatarImage} src={avatarImage} alt="avatar" />
+      </div>
+      <div 
+        ref={containerRef}
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseUp}
+        onMouseUp={handleMouseUp}
+        className={styles.buttonContainer}>
+        {tabList().map((item) => (
+          <button className={styles.button} key={item}>
+            {item}
+          </button>
+        ))}
+      </div>
     </header>
-  )
+  );
 }
+
+const tabList = () => {
+  return [
+    '전체',
+    '음악',
+    '믹스',
+    '라이브',
+    '애니메이션',
+    '최근에 업로드된 동영상',
+    '감상한 동영상',
+    '새로운 맞춤 동영상',
+  ];
+};

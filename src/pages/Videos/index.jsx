@@ -1,6 +1,7 @@
 import { useParams } from 'react-router';
 import { useQuery } from '@tanstack/react-query';
 import Youtube from '../../features/api/youtube.js';
+import FakeYoutubeApi from '../../features/api/fakeYoutubeApi.js';
 import VideoCard from '../../entities/video/ui/VideoCard/VideoCard.jsx';
 import styles from './styles/index.module.css';
 

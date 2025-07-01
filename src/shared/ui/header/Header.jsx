@@ -1,12 +1,17 @@
-import { useState, useRef } from 'react';
-import { Link, useNavigate } from 'react-router';
+import { useState, useRef, useEffect } from 'react';
+import { Link, useNavigate, useParams } from 'react-router';
 import { FiSearch } from 'react-icons/fi';
 import styles from './Header.module.css';
 import avatarImage from '../../assets/images/monster.png';
 
 export function Header() {
+  const { keyword } = useParams();
   const navigate = useNavigate();
   const [text, setText] = useState('');
+
+  useEffect(() => {
+    setText(keyword || '');
+  }, [keyword]);
 
   const containerRef = useRef(null);
 
@@ -40,7 +45,7 @@ export function Header() {
   const handleButtonClick = (e) => {
     e.preventDefault();
     alert('준비중입니다.');
-  }
+  };
 
   return (
     <header className={styles.wrapper}>
@@ -63,16 +68,17 @@ export function Header() {
         </form>
         <img className={styles.avatarImage} src={avatarImage} alt="avatar" />
       </div>
-      <div 
+      <div
         ref={containerRef}
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseUp}
         onMouseUp={handleMouseUp}
-        className={styles.buttonContainer}>
+        className={styles.buttonContainer}
+      >
         {tabList().map((item) => (
-          <button 
-            className={styles.button} 
+          <button
+            className={styles.button}
             key={item}
             onClick={handleButtonClick}
           >

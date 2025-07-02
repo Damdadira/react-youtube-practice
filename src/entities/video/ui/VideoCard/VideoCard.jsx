@@ -2,13 +2,13 @@ import { useNavigate } from 'react-router';
 import { formatAgo } from '../../../../shared/lib/timeago';
 import styles from '../VideoCard/VideoCard.module.css'
 
-export default function VideoCard ({video}) {
+export default function VideoCard ({ video }) {
   const { title, thumbnails, channelTitle, publishedAt } = video.snippet;
   const navigate = useNavigate();
   
   const handleClick = (e) => {
     e.preventDefault();
-    navigate(`/watch/${video.id}`);
+    navigate(`/watch/${video.id}`, { state: { video } });
   }
 
   return (

@@ -1,10 +1,25 @@
-import { useParams } from 'react-router'
+import { useLocation } from 'react-router'
 import styles from './styles/index.module.css'
 
 export default function VideoDetail() {
-  const { videoId } = useParams();
+  const { state: { video } } = useLocation();
+  const { title, channelId, channelTitle, description } = video.snippet;
 
   return (
-    <div className={styles.videoDetailContainer}>VideoDetail: {videoId}</div>
+    <section className={styles.videoDetailContainer}>
+      <article className={styles.channelContainer}>
+        <iframe 
+          id='player'
+          type='text/html'
+          className={styles.videoPlayer}
+          src={`https://www.youtube.com/embed/${video.id}`} 
+          frameborder="0">
+        </iframe>
+        <div>
+          <span className={styles.videoTitle}>{channelTitle}</span>
+          <pre className={styles.videoDescription}>{description}</pre>
+        </div>
+      </article>
+    </section>
   )
 }

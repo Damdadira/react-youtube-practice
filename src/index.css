@@ -2,8 +2,10 @@
   /* Color */
   --color-brand: #FF0000;
   --color-white: #ffffff;
+  --color-light-black: #000000be;
   --color-black: #000000;
-  --color-light-gray: #c6c6c6;
+  --color-light-gray: #eeeeee;
+  --color-soft-gray: #c6c6c6;
   --color-medium-gray: #606060;
 
   /* Font Size */

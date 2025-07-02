@@ -36,7 +36,7 @@
 .formInput {
   width: 27rem;
   padding: .4rem 1rem;
-  border: 1px solid var(--color-light-gray);
+  border: 1px solid var(--color-soft-gray);
   border-radius: 20px 0 0 20px;
   font-size: var(--font-regular);
 }
@@ -51,7 +51,7 @@
   justify-content: center;
   align-items: center;
   width: 3.5rem;
-  border: 1px solid var(--color-light-gray);
+  border: 1px solid var(--color-soft-gray);
   border-left: none;
   border-radius: 0 20px 20px 0;
   background: #f0f0f0be;

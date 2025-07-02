@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export default class FakeYoutubeApi {
+export default class FakeYoutubeClient {
   async search() {
     return axios.get('/mock/search.json');
   }

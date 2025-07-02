@@ -3,9 +3,10 @@ import { Link, useNavigate, useParams } from 'react-router';
 import { FiSearch } from 'react-icons/fi';
 import styles from './Header.module.css';
 import avatarImage from '../../assets/images/monster.png';
+import clsx from 'clsx';
 
 export function Header() {
-  const { keyword } = useParams();
+  const { keyword, videoId } = useParams();
   const navigate = useNavigate();
   const [text, setText] = useState('');
 
@@ -69,12 +70,14 @@ export function Header() {
         <img className={styles.avatarImage} src={avatarImage} alt="avatar" />
       </div>
       <div
+        className={clsx(styles.buttonContainer, {
+          [styles.none]: videoId
+        })}
         ref={containerRef}
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseUp}
         onMouseUp={handleMouseUp}
-        className={styles.buttonContainer}
       >
         {tabList().map((item) => (
           <button

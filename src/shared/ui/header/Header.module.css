@@ -105,6 +105,10 @@
   color: var(--color-white);
 }
 
+.none {
+  display: none;
+}
+
 @media (max-width: 852px) {
   .formInput {
     width: 17rem;

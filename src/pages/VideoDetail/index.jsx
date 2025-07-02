@@ -4,5 +4,7 @@ import styles from './styles/index.module.css'
 export default function VideoDetail() {
   const { videoId } = useParams();
 
-  return <div>VideoDetail: {videoId}</div>
+  return (
+    <div className={styles.videoDetailContainer}>VideoDetail: {videoId}</div>
+  )
 }

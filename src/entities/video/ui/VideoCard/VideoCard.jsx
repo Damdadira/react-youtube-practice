@@ -1,3 +1,4 @@
+import { formatAgo } from '../../../../shared/lib/timeago';
 import styles from '../VideoCard/VideoCard.module.css'
 
 export default function VideoCard ({video}) {
@@ -14,7 +15,7 @@ export default function VideoCard ({video}) {
         <span className={styles.discriptionTitle} title={title}>{title}</span>
         <div className={styles.discriptionWrapper}>
           <span>{channelTitle}</span>
-          <span>{publishedAt}</span>
+          <span>{formatAgo(publishedAt, 'ko')}</span>
         </div>
       </div>
     </li>

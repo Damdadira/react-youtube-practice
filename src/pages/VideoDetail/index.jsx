@@ -1,4 +1,6 @@
 import { useLocation } from 'react-router'
+import ChannelInfo from '../../entities/video/ui/ChannelInfo/ChannelInfo'
+import RelatedVideos from '../../entities/video/ui/RelatedVideos/RelatedVideos'
 import styles from './styles/index.module.css'
 
 export default function VideoDetail() {
@@ -16,10 +18,16 @@ export default function VideoDetail() {
           frameborder="0">
         </iframe>
         <div>
-          <span className={styles.videoTitle}>{channelTitle}</span>
+          <div className={styles.channelInfoContainer}>
+            <span className={styles.videoTitle}>{title}</span>
+            <ChannelInfo id={channelId} name={channelTitle}></ChannelInfo>
+          </div>
           <pre className={styles.videoDescription}>{description}</pre>
         </div>
       </article>
+      <section class={styles.relatedVideosContainer}>
+        <RelatedVideos></RelatedVideos>
+      </section>
     </section>
   )
 }

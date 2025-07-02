@@ -8,6 +8,17 @@ export default class Youtube {
     return keyword ? this.#searchByKeyword(keyword) : this.#mostPopular();
   }
 
+  async channelImageURL(id) {
+    return this.apiClient.channels(
+      {
+        params: {
+          part: 'snippet', 
+          id
+        }
+      })
+      .then(res => res.data.items[0].snippet.thumbnails.default.url)
+  }
+
   // 앞에 #붙이면 private 함수(비공개 함수)
   async #searchByKeyword(keyword) {
     return this.apiClient.search(
@@ -31,7 +42,7 @@ export default class Youtube {
           maxResults: 25,
           chart: 'mostPopular'
         }
-      }
-    ).then(res => res.data.items)
+      })
+      .then(res => res.data.items)
   }
 }

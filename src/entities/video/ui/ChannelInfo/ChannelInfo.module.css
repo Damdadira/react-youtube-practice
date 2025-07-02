@@ -1,0 +1,16 @@
+.channelInfoContainer {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+
+.channelInfoImage {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.channelInfoName {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+}

@@ -12,11 +12,28 @@ export default class Youtube {
     return this.apiClient.channels(
       {
         params: {
-          part: 'snippet', 
+          part: 'snippet',
           id
         }
-      })
-      .then(res => res.data.items[0].snippet.thumbnails.default.url)
+      }
+    )
+    .then(res => res.data.items[0].snippet.thumbnails.default.url);
+  }
+
+  async searchByChannelId(channelId) {
+    return this.apiClient.search(
+      {
+        params: {
+          part: 'snippet', 
+          channelId, 
+          maxResults: 25, 
+          order: 'date', 
+          type: 'video'
+        }
+      }
+    )
+    .then(res => res.data.items)
+    .then(items => items.map(item => ({ ...item, id: item.id.videoId })));
   }
 
   // 앞에 #붙이면 private 함수(비공개 함수)
@@ -29,9 +46,10 @@ export default class Youtube {
           type: 'video',
           q: keyword
         }
-      })
-      .then(res => res.data.items)
-      .then(items => items.map(item => ({ ...item, id: item.id.videoId })));
+      }
+    )
+    .then(res => res.data.items)
+    .then(items => items.map(item => ({ ...item, id: item.id.videoId })));
   }
 
   async #mostPopular() {
@@ -42,7 +60,8 @@ export default class Youtube {
           maxResults: 25,
           chart: 'mostPopular'
         }
-      })
-      .then(res => res.data.items)
+      }
+    )
+    .then(res => res.data.items);
   }
 }

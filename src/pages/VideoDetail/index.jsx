@@ -21,12 +21,13 @@ export default function VideoDetail() {
           <div className={styles.channelInfoContainer}>
             <span className={styles.videoTitle}>{title}</span>
             <ChannelInfo id={channelId} name={channelTitle}></ChannelInfo>
+            {/* Comment 컴포넌트 추가하기 */}
           </div>
           <pre className={styles.videoDescription}>{description}</pre>
         </div>
       </article>
       <section class={styles.relatedVideosContainer}>
-        <RelatedVideos></RelatedVideos>
+        <RelatedVideos id={channelId}></RelatedVideos>
       </section>
     </section>
   )

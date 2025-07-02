@@ -1,5 +1,31 @@
-import styles from '../RelatedVideos/RelatedVideos.module.css'
+import { useQuery } from '@tanstack/react-query';
+import { useYoutubeApi } from '../../../../app/context/YoutubeApiContext';
+import VideoCard from '../VideoCard/VideoCard';
+import styles from '../RelatedVideos/RelatedVideos.module.css';
 
-export default function RealtedVideos() {
-  return <div>관련 비디오</div>
+export default function RealtedVideos({ id }) {
+  const { youtube } = useYoutubeApi();
+  const {
+    isLoading,
+    error,
+    data: videos,
+  } = useQuery({
+    queryKey: ['playlist', id],
+    queryFn: () => youtube.searchByChannelId(id),
+    staleTime: 1000 * 60 * 5,
+  });
+
+  return (
+    <div>
+      {isLoading && <div>Loading...</div>}
+      {error && <div>Someting is Wrong...😱</div>}
+      {videos && (
+        <ul className={styles.videosContainer}>
+          {videos.map((video) => (
+            <VideoCard key={video.id} video={video} type='playlist'></VideoCard>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
 }

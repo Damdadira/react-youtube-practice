@@ -13,20 +13,17 @@ export default function Videos() {
     data: videos,
   } = useQuery({
     queryKey: ['videos', keyword],
-    queryFn: () => youtube.search(keyword)
+    queryFn: () => youtube.search(keyword),
   });
 
   return (
     <div>
       {isLoading && <div>Loading...</div>}
-      {error && <div>someting is wrong...</div>}
+      {error && <div>Someting is Wrong...😱</div>}
       {videos && (
         <ul className={styles.videosContainer}>
           {videos.map((video) => (
-            <VideoCard
-              key={video.id}
-              video={video}
-            ></VideoCard>
+            <VideoCard key={video.id} video={video}></VideoCard>
           ))}
         </ul>
       )}

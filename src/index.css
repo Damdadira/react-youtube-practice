@@ -2,8 +2,10 @@
   /* Color */
   --color-brand: #FF0000;
   --color-white: #ffffff;
+  --color-light-black: #000000be;
   --color-black: #000000;
-  --color-light-gray: #c6c6c6;
+  --color-light-gray: #eeeeee;
+  --color-soft-gray: #c6c6c6;
   --color-medium-gray: #606060;
 
   /* Font Size */
@@ -12,6 +14,7 @@
   --font-regular: 1.2rem;
   --font-small: 1rem;
   --font-micro: .9rem;
+  --font-mini: .8rem;
 
   /* Font Weight */
   --weight-bold: 800;

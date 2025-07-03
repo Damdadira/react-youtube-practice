@@ -51,19 +51,17 @@ export default class Youtube {
   }
 
   // replies
-  // async channelComments(videoId) {
-  //   return this.apiClient.comments(
-  //     {
-  //       params: {
-  //         part: 'snippet',
-  //         videoId,
-  //         maxResults: 50,
-  //         order: 'relevance'
-  //       }
-  //     }
-  //   )
-  //   .then(res => res.data.items);
-  // }
+  async channelReplies(parentId) {
+    return this.apiClient.replies(
+      {
+        params: {
+          part: 'snippet',
+          parentId,
+        }
+      }
+    )
+    .then(res => res.data.items);
+  }
 
   // 앞에 #붙이면 private 함수(비공개 함수)
   async #searchByKeyword(keyword) {

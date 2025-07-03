@@ -1,0 +1,31 @@
+.commentItemContainer {
+  display: flex;
+  gap: .6rem;
+}
+
+.commentItemImage {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.commentItemWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.commentItemAuthor {
+  font-size: var(--font-micro);
+  font-weight: var(--weight-semi-bold);
+}
+
+.commentItemText {
+  font-family: "Roboto", "Arial", sans-serif;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: var(--color-light-black);
+  font-size: var(--font-micro);
+  line-height: 1.5;
+  margin: 0;
+}

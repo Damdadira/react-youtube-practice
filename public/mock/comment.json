@@ -1,0 +1,837 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "GTXZa5VwbfsRCU_tlpk6CYRAEEU",
+  "nextPageToken": "Z2V0X25ld2VzdF9maXJzdC0tQ2dnSWdBUVZGN2ZST0JJRkNJZ2dHQUFTQlFpZElCZ0JFZ1VJcUNBWUFCSUZDSWNnR0FBU0JRaUpJQmdBSWcwS0N3aUtwOGpDQmhDb2phMGg=",
+  "pageInfo": {
+    "totalResults": 20,
+    "resultsPerPage": 20
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "gMQ88twNsi2fmcL1H-u7iXjqcl0",
+      "id": "UgzJiqa45ntnY235mLN4AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "cDs5COz0p9bZOB16NQEP1SYu6K4",
+          "id": "UgzJiqa45ntnY235mLN4AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "I just turned 42 and I aim to retire 50. my portfolio has grown from $213k saved up to $1.3m in 14 months. Having robert carlos wright manage it was the smartest approach I took, cause the traditional 401(k), tsp and the rest dampen your retirement plans, I’m finally a millionaire 🎉",
+            "textOriginal": "I just turned 42 and I aim to retire 50. my portfolio has grown from $213k saved up to $1.3m in 14 months. Having robert carlos wright manage it was the smartest approach I took, cause the traditional 401(k), tsp and the rest dampen your retirement plans, I’m finally a millionaire 🎉",
+            "authorDisplayName": "@mikemike1200",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_ktANa1yRB1P42gj9Fc6OdA-kWzMBwY2WSOCsy_S5Fw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@mikemike1200",
+            "authorChannelId": {
+              "value": "UCxqpdYFm264NxlZbwTR6RUQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-07-02T09:41:56Z",
+            "updatedAt": "2025-07-02T09:41:56Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 7,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "zj5Sr2dQxuHiYY1_GrVhEUnZlZE",
+            "id": "UgzJiqa45ntnY235mLN4AaABAg.AK3xZdW0JHTAK4skyMk95W",
+            "snippet": {
+              "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+              "videoId": "_VB39Jo8mAQ",
+              "textDisplay": "I&#39;m a uber driver and I don&#39;t know anything about the finance sector, but I am ready to bridge that gap, I have $310k, and intend to start with ETFs but with so many options to pick from, it&#39;s confusing. Years will fly by unless of course you hate your job lol",
+              "textOriginal": "I'm a uber driver and I don't know anything about the finance sector, but I am ready to bridge that gap, I have $310k, and intend to start with ETFs but with so many options to pick from, it's confusing. Years will fly by unless of course you hate your job lol",
+              "parentId": "UgzJiqa45ntnY235mLN4AaABAg",
+              "authorDisplayName": "@Farise-n9i5v",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kcXEOu6k8h4vhd7TDiBQEyGlFlZxCRHzbQX8RkSVGKqSDE8MJMACx0THsWFFcXjtrIGA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/@Farise-n9i5v",
+              "authorChannelId": {
+                "value": "UCdI2WYZ2yZKP6DAozWUxgZQ"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2025-07-02T18:19:10Z",
+              "updatedAt": "2025-07-02T18:19:10Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "z0XSxRfcSkRMxsFMJQfikOZWayE",
+            "id": "UgzJiqa45ntnY235mLN4AaABAg.AK3xZdW0JHTAK4tBLm23_2",
+            "snippet": {
+              "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+              "videoId": "_VB39Jo8mAQ",
+              "textDisplay": "@@Farise-n9i5v l&#39;m practically married to my job haha. 21 years as an aeronautical engineer, a great company match on the 401(K). Just wish I got into the financial market way sooner, maybe l&#39;d have retired well before now, but I am now doing great following my CFA. It&#39;s a smart approach especially when you have good capital sitting around",
+              "textOriginal": "@@Farise-n9i5v l'm practically married to my job haha. 21 years as an aeronautical engineer, a great company match on the 401(K). Just wish I got into the financial market way sooner, maybe l'd have retired well before now, but I am now doing great following my CFA. It's a smart approach especially when you have good capital sitting around",
+              "parentId": "UgzJiqa45ntnY235mLN4AaABAg",
+              "authorDisplayName": "@mikemike1200",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_ktANa1yRB1P42gj9Fc6OdA-kWzMBwY2WSOCsy_S5Fw=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/@mikemike1200",
+              "authorChannelId": {
+                "value": "UCxqpdYFm264NxlZbwTR6RUQ"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2025-07-02T18:22:55Z",
+              "updatedAt": "2025-07-02T18:22:55Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "KSHe6_ieCowJfP8Cbn9EBVfZMNs",
+            "id": "UgzJiqa45ntnY235mLN4AaABAg.AK3xZdW0JHTAK4tH7OfK0M",
+            "snippet": {
+              "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+              "videoId": "_VB39Jo8mAQ",
+              "textDisplay": "ran a quick search, your CFA is wild, lots of good checks, experience and no disclosure. work never lets me look at the market myself. I saw his portfolio landing page, after I checked the name, I’ll get to him tomorrow, thank you",
+              "textOriginal": "ran a quick search, your CFA is wild, lots of good checks, experience and no disclosure. work never lets me look at the market myself. I saw his portfolio landing page, after I checked the name, I’ll get to him tomorrow, thank you",
+              "parentId": "UgzJiqa45ntnY235mLN4AaABAg",
+              "authorDisplayName": "@Farise-n9i5v",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kcXEOu6k8h4vhd7TDiBQEyGlFlZxCRHzbQX8RkSVGKqSDE8MJMACx0THsWFFcXjtrIGA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/@Farise-n9i5v",
+              "authorChannelId": {
+                "value": "UCdI2WYZ2yZKP6DAozWUxgZQ"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2025-07-02T18:23:42Z",
+              "updatedAt": "2025-07-02T18:23:42Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "UI8AuxiZnwJ6zb8Zygie6ETlv7Q",
+            "id": "UgzJiqa45ntnY235mLN4AaABAg.AK3xZdW0JHTAK4tUU913wR",
+            "snippet": {
+              "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+              "videoId": "_VB39Jo8mAQ",
+              "textDisplay": "@@mikemike1200 Is it worth investing if I only have 12k to start?",
+              "textOriginal": "@@mikemike1200 Is it worth investing if I only have 12k to start?",
+              "parentId": "UgzJiqa45ntnY235mLN4AaABAg",
+              "authorDisplayName": "@Ashik-v4x3s",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_k489dbUjVHiavMXCVBLGMHjuZ1MbGhFgMATRJyE25ZAk1KhQl3s6Hf7REnBDXFhbKjBA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/@Ashik-v4x3s",
+              "authorChannelId": {
+                "value": "UCdnrUUZIyfBSLDtvfKqZQFw"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2025-07-02T18:25:31Z",
+              "updatedAt": "2025-07-02T18:25:31Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "kWfT1wOhUZxVNxiI5v9TZ9nZ3d0",
+            "id": "UgzJiqa45ntnY235mLN4AaABAg.AK3xZdW0JHTAK4tZHVSo0J",
+            "snippet": {
+              "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+              "videoId": "_VB39Jo8mAQ",
+              "textDisplay": "@@Ashik-v4x3s I can’t really answer cause I’ve never been in that position, but everyone’s starting point is different, better to start small than not at all",
+              "textOriginal": "@@Ashik-v4x3s I can’t really answer cause I’ve never been in that position, but everyone’s starting point is different, better to start small than not at all",
+              "parentId": "UgzJiqa45ntnY235mLN4AaABAg",
+              "authorDisplayName": "@mikemike1200",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_ktANa1yRB1P42gj9Fc6OdA-kWzMBwY2WSOCsy_S5Fw=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/@mikemike1200",
+              "authorChannelId": {
+                "value": "UCxqpdYFm264NxlZbwTR6RUQ"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2025-07-02T18:26:11Z",
+              "updatedAt": "2025-07-02T18:26:11Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "YA3MXGiCnMxLMv2LouD88cY8NKc",
+      "id": "Ugwil9Q8kDuCqA9184p4AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "FSTjPfm5YIchyXz6sWNOZDgSDgY",
+          "id": "Ugwil9Q8kDuCqA9184p4AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "Blame the corporations for wanting to track everyone and provide &quot;frictionless pay.&quot; They don&#39;t care who it financially devastates- that&#39;s what they want. It&#39;s designed to make you spend more. And kids have no chance.",
+            "textOriginal": "Blame the corporations for wanting to track everyone and provide \"frictionless pay.\" They don't care who it financially devastates- that's what they want. It's designed to make you spend more. And kids have no chance.",
+            "authorDisplayName": "@bargemouvier",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kRFQYW8qiU37sWuMQmA2wYYmvHH4Kosb_S1OSdMfB6SQ0sN30dpNzV38mrY-AKhoJywg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@bargemouvier",
+            "authorChannelId": {
+              "value": "UCPGUd8D6WJF04_xV0YDZvRg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-07-01T19:28:52Z",
+            "updatedAt": "2025-07-01T19:28:52Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "XJKGz0h2Azb2DZvqVxnsI12Yvbg",
+      "id": "UgwRf7Pm7GKGqI6IHTt4AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "W3cp7NBBZ8XZtqLdn1wzpCKUhmg",
+          "id": "UgwRf7Pm7GKGqI6IHTt4AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "❤❤❤ This is great information shared,  🎉🎉🎉🎉🎉",
+            "textOriginal": "❤❤❤ This is great information shared,  🎉🎉🎉🎉🎉",
+            "authorDisplayName": "@komamoney",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_l0Wf4e8BpRQfxFOF5YcyTs4b3aSffmzheMfpOhbySuqiM5LbSQvJJUievluI4_IxCyOg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@komamoney",
+            "authorChannelId": {
+              "value": "UCSW5m1lp5l-t2DKdU2wXzag"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-06-30T09:23:04Z",
+            "updatedAt": "2025-06-30T09:23:04Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "nJKh3kdBXogvKVVIPyBqHiRse6w",
+      "id": "UgwFSUVGdxj_h_pcoaJ4AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "KuMuJoTgf7zsilyfFBhkG0--8og",
+          "id": "UgwFSUVGdxj_h_pcoaJ4AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "I would be proud that my kids played cooperatively. That&#39;s the wonderful part. That is real success. If society functioned the way your kids played monopoly then society would finely return to success as well.",
+            "textOriginal": "I would be proud that my kids played cooperatively. That's the wonderful part. That is real success. If society functioned the way your kids played monopoly then society would finely return to success as well.",
+            "authorDisplayName": "@davidcanatella4279",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_miPP4pGb3jjlWU9rLmWjhKQ-Oto0HOJX2G9D-JJlg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@davidcanatella4279",
+            "authorChannelId": {
+              "value": "UCTyb5pgu8Ql9Drj31HvIydA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-06-27T03:21:28Z",
+            "updatedAt": "2025-06-27T03:25:53Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Y2VnLNyYVPQ41tA5CZJUcv6dJ3w",
+      "id": "UgyAKjdT7BQDI1Qx83t4AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Floi0aqUimOHDLpcYiKS21fItsk",
+          "id": "UgyAKjdT7BQDI1Qx83t4AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "Money isn&#39;t real when you can walk into the store grab what you want and then walk right out.... 😂 Not get arrested.",
+            "textOriginal": "Money isn't real when you can walk into the store grab what you want and then walk right out.... 😂 Not get arrested.",
+            "authorDisplayName": "@TheKunkockulator",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/SCJi-g7zxRmINZ0eeyjDUnzKQPmOKumHJywzzAGCEnTau_sGgGif31NmuPfRFb89FZK-7ttU=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@TheKunkockulator",
+            "authorChannelId": {
+              "value": "UCaAmTexf9Zt7xtQHgAFDuew"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-06-26T16:07:27Z",
+            "updatedAt": "2025-06-26T16:07:27Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "tnGrhw7pcF72Fu_IsT_35oSxkzg",
+      "id": "UgxDewxHdkcZwpdKeO54AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "BEjSiYOqJ6WgBsZGgkw5PWfko0k",
+          "id": "UgxDewxHdkcZwpdKeO54AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "Those who say earning money is more important than budgeting — I would like to point out that there are two important lessons about money: budgeting, which Adam talks about in the video, and earning, which people mention in the comments.\u003cbr\u003e\u003cbr\u003eI believe that if your kids are 7, 9, and 11, teaching them budgeting first is not a bad idea. Life — and you, as a parent — will teach them the other lessons as they grow into teenagers.\u003cbr\u003e\u003cbr\u003eA lot of adults only know one of these lessons and struggle because of it.\u003cbr\u003e\u003cbr\u003eI’ll definitely use some of the methods mentioned here to teach my 5- and 7-year-olds about money.",
+            "textOriginal": "Those who say earning money is more important than budgeting — I would like to point out that there are two important lessons about money: budgeting, which Adam talks about in the video, and earning, which people mention in the comments.\n\nI believe that if your kids are 7, 9, and 11, teaching them budgeting first is not a bad idea. Life — and you, as a parent — will teach them the other lessons as they grow into teenagers.\n\nA lot of adults only know one of these lessons and struggle because of it.\n\nI’ll definitely use some of the methods mentioned here to teach my 5- and 7-year-olds about money.",
+            "authorDisplayName": "@rg_commerce",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/LqhZ5TvSbZS5IelwR9ZPOprPqSRp6RpjbkjKorgNSRiqwxpiyTunyBYtFrj9ZNgz1i8BFVMIfQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@rg_commerce",
+            "authorChannelId": {
+              "value": "UCGOj2C7hdxe7IYfv9wY3x1A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-06-25T18:50:13Z",
+            "updatedAt": "2025-06-25T18:50:13Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "euzANhQvJzfAmKwdINhXLs2sqcg",
+      "id": "UgwrBa1s6_w8B49OhH54AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "LzJJF-R62jKQnzMSO5JkjsC_T9g",
+          "id": "UgwrBa1s6_w8B49OhH54AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "Ketika uang tidak terasa nyata. Manusia cenderung tidak berpikir untuk menggunakan nya dan cenderung boros.\u003cbr\u003e\u003cbr\u003eKetika seseorang mendapatkan kesempatan untuk berbuat sesuatu, secara sering dan berulang-ulang, dan menyerap atau mendapatkan pelajaran darinya. Maka orang tersebut akan sukses dibidang tersebut.",
+            "textOriginal": "Ketika uang tidak terasa nyata. Manusia cenderung tidak berpikir untuk menggunakan nya dan cenderung boros.\n\nKetika seseorang mendapatkan kesempatan untuk berbuat sesuatu, secara sering dan berulang-ulang, dan menyerap atau mendapatkan pelajaran darinya. Maka orang tersebut akan sukses dibidang tersebut.",
+            "authorDisplayName": "@ranggayogiswara5148",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kO_11-6Vq5fALoES1uCD-ke5hmqIBTH-UZykJQ5zEAN04=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ranggayogiswara5148",
+            "authorChannelId": {
+              "value": "UCovAyoDuq04wpZ1NEfgYz3w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-06-25T12:51:39Z",
+            "updatedAt": "2025-06-25T12:53:56Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "qjD34oKgy3aDscVPU1nA5c4R-Js",
+      "id": "UgxfjPOnur2_8so-91J4AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "9vgRf-PxHro_WCBDCBOOLL6UeKU",
+          "id": "UgxfjPOnur2_8so-91J4AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "This is super important but not many people think about it",
+            "textOriginal": "This is super important but not many people think about it",
+            "authorDisplayName": "@k.c.simonsen2",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mtrFEamRE0xVZnoVkI7x_827tt-ZFfE_F6MZSwhChtNGA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@k.c.simonsen2",
+            "authorChannelId": {
+              "value": "UCV0mjsjbtCxCWR0uurxyaSg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-06-25T09:13:08Z",
+            "updatedAt": "2025-06-25T09:13:08Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "4YQacXHDWlze8X8EIKjMEZYeR38",
+      "id": "UgxhinEKUAOAu474R7h4AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "SL3n3qvT7qtqu8NwnhSqA81v3p0",
+          "id": "UgxhinEKUAOAu474R7h4AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "I have to question this guys story of monopoly.. you always buy the properties early on it&#39;s very rare for someone to have setup hotels while there is still a sizable number of properties to be bought and a game that has not progressed to house/hotel development will go no practically forever as undeveloped property rent is very low and you get 200 every time you pass go.\u003cbr\u003e\u003cbr\u003eI once played with my nephew who got it in this head not to buy property he didn&#39;t like and save his money.. guess what it ended very bad for him esp if you play by the rules and auction it off if it&#39;s not bought by the landing player.\u003cbr\u003e\u003cbr\u003eI think he makes a good point about the reality of money but the monopoly story sounds like it&#39;s being misremembered or there are other details to that games rules he&#39;s forgetting to tell us.\u003cbr\u003e\u003cbr\u003eOr perhaps the kid wanted to save every dollar and so was worried to land on a property and pay out 20 bucks when he&#39;s sitting on 1k.\u003cbr\u003e\u003cbr\u003eIn which case the lesson of the reality of money takes a back seat to the much bigger lesson that should have been taught, that money is a tool, and nothing more.\u003cbr\u003eit&#39;s like energy stored in a battery, it is only useful when used, it&#39;s how it&#39;s used that is the important part.",
+            "textOriginal": "I have to question this guys story of monopoly.. you always buy the properties early on it's very rare for someone to have setup hotels while there is still a sizable number of properties to be bought and a game that has not progressed to house/hotel development will go no practically forever as undeveloped property rent is very low and you get 200 every time you pass go.\n\nI once played with my nephew who got it in this head not to buy property he didn't like and save his money.. guess what it ended very bad for him esp if you play by the rules and auction it off if it's not bought by the landing player.\n\nI think he makes a good point about the reality of money but the monopoly story sounds like it's being misremembered or there are other details to that games rules he's forgetting to tell us.\n\nOr perhaps the kid wanted to save every dollar and so was worried to land on a property and pay out 20 bucks when he's sitting on 1k.\n\nIn which case the lesson of the reality of money takes a back seat to the much bigger lesson that should have been taught, that money is a tool, and nothing more.\nit's like energy stored in a battery, it is only useful when used, it's how it's used that is the important part.",
+            "authorDisplayName": "@Randomness82",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-ucCdRFStyRpdNF32L03Lhg8vcBO_dqn9LWkePtHdET1Lqi8V5FaNEqeIOoDVeIX3CERv-jYVQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Randomness82",
+            "authorChannelId": {
+              "value": "UCVBrARHwn0b16SlrqdOPuMw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-06-25T04:05:04Z",
+            "updatedAt": "2025-06-25T04:08:18Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "tgcbbLQMpNQ3pofHLPOTLd2ArSw",
+      "id": "UgyzQ4dLbTfHa06lKw54AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Hy3m2g0ETvPFE4iBepVwjEmVHOE",
+          "id": "UgyzQ4dLbTfHa06lKw54AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "Dumbest quote ever heard",
+            "textOriginal": "Dumbest quote ever heard",
+            "authorDisplayName": "@wounderlust8954",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/JPgza994C3Yurmivp-fI346VqKf4j12vruS1WRrfnycucSDxvya3AXPxZo37X89d6imznmgw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@wounderlust8954",
+            "authorChannelId": {
+              "value": "UCgkjPaHWv2e-X3wgvOLfQjg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-06-24T16:10:43Z",
+            "updatedAt": "2025-06-24T16:10:43Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "7dV17L1t-CcodIZSpDVJ---dE9w",
+      "id": "UgzuKYLNVRlaOTI0P9d4AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "beT5SJsF-2r1mBfGvPqvMXMpXDE",
+          "id": "UgzuKYLNVRlaOTI0P9d4AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "9 years ago. More relevant today than ever",
+            "textOriginal": "9 years ago. More relevant today than ever",
+            "authorDisplayName": "@UofIllinois07",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_l4QRnWC8s8EzS6cD45ux1BL1zAS0UnkQQUIn2ZYLeMww=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@UofIllinois07",
+            "authorChannelId": {
+              "value": "UCmW9cVPxT0oJawSMl-qqXpw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-06-24T16:04:20Z",
+            "updatedAt": "2025-06-24T16:04:20Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "IUQIkzo7Tv5AxAgYYr1pnJCiQVk",
+      "id": "UgxfciaQn_mzROKlWph4AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ijnaKjTqxkXQZEAE1mb1V6ceoME",
+          "id": "UgxfciaQn_mzROKlWph4AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "Well duh of course people play differently when real money is involved",
+            "textOriginal": "Well duh of course people play differently when real money is involved",
+            "authorDisplayName": "@adriandahlstedt",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/T9cDCOz__r8ifMSD2l470sJdli83uzZ_8Djga3wt56QUScDZbDj4FZ6uivYl5GR0W9jn6lNqXA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@adriandahlstedt",
+            "authorChannelId": {
+              "value": "UCQDD4ZBEmg-by2WEpNtEbLg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-06-24T15:07:29Z",
+            "updatedAt": "2025-06-24T15:07:29Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "i8b8qi-Is9fVpjat014bmHD0tfA",
+      "id": "UgxjH9bUtj9NKGRfvVR4AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "_Wriqnay6Sso_7qT1_CER8XRxno",
+          "id": "UgxjH9bUtj9NKGRfvVR4AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "I think the lack of good paying jobs is really what sucks. CEO pay shouldn’t be what it is.",
+            "textOriginal": "I think the lack of good paying jobs is really what sucks. CEO pay shouldn’t be what it is.",
+            "authorDisplayName": "@NewPodComp",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/CMpMvl-1fySWV1I6KfKY1T__q3S1BsMnk0feg6v0Uhqtd4mF3lFroOr0UGCqJfVTRhzxyDfb9Q=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@NewPodComp",
+            "authorChannelId": {
+              "value": "UCNGOrSzEzXcjuijsaJexm9A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-06-23T13:53:40Z",
+            "updatedAt": "2025-06-23T13:53:40Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "S_pNOFOne1V0_KM5r1M58LjZQR4",
+      "id": "UgzdXo91judaswjSZsF4AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "qqWCBGdBYmxpNDJiQpgmB6kw4GM",
+          "id": "UgzdXo91judaswjSZsF4AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "Interesting and more valid 9 years on. I remember my daughters always being impressed when then received change as change appeared more than the note given.",
+            "textOriginal": "Interesting and more valid 9 years on. I remember my daughters always being impressed when then received change as change appeared more than the note given.",
+            "authorDisplayName": "@SJG33",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lU8vyeVskdUgWB_Jxw47y26CqaJy4wYD2_A4LjneA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@SJG33",
+            "authorChannelId": {
+              "value": "UCwRwuqnf2NnVK4pgO0AfkrA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-06-23T08:57:09Z",
+            "updatedAt": "2025-06-23T08:57:09Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "6Z-xO2NxCjosATMt7mGcaMB3Y2Q",
+      "id": "UgyJ8DgYFJPAO9K8S0l4AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "skLdICPlemQftiq4Sao0J-_MdxQ",
+          "id": "UgyJ8DgYFJPAO9K8S0l4AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "I’m 10 years late an just found bitcoin!!!!",
+            "textOriginal": "I’m 10 years late an just found bitcoin!!!!",
+            "authorDisplayName": "@Anyonecanifican",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ijKcYAkMata6tKqu_5JIHnHn731hj300KXuJ44I6MxuDou4U7bV8rPESdUfk5IGvL9Xh6FhJHQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Anyonecanifican",
+            "authorChannelId": {
+              "value": "UCum8I3tx3Wmk8fwgC9VpCFA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-06-21T20:28:16Z",
+            "updatedAt": "2025-06-21T20:28:16Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "4voqTcYXTK03mc-pCRoj6irovks",
+            "id": "UgyJ8DgYFJPAO9K8S0l4AaABAg.AJdmmpDYljJAJdmqHgPKQC",
+            "snippet": {
+              "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+              "videoId": "_VB39Jo8mAQ",
+              "textDisplay": "But my child ain’t",
+              "textOriginal": "But my child ain’t",
+              "parentId": "UgyJ8DgYFJPAO9K8S0l4AaABAg",
+              "authorDisplayName": "@Anyonecanifican",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ijKcYAkMata6tKqu_5JIHnHn731hj300KXuJ44I6MxuDou4U7bV8rPESdUfk5IGvL9Xh6FhJHQ=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/@Anyonecanifican",
+              "authorChannelId": {
+                "value": "UCum8I3tx3Wmk8fwgC9VpCFA"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2025-06-21T20:28:44Z",
+              "updatedAt": "2025-06-21T20:28:44Z"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "xhkr3GuIoFq019GFhtnZ-w9Obf0",
+      "id": "UgxC7brMqDhHl6JvlNt4AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "lLHRKXxBbBPtsTw9UcHbjg1u7Tk",
+          "id": "UgxC7brMqDhHl6JvlNt4AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "What a great idea.  I will be passing a link to this video to everyone I know.",
+            "textOriginal": "What a great idea.  I will be passing a link to this video to everyone I know.",
+            "authorDisplayName": "@stuffoflife5290",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kTMXlIku39690whbSqIPTGPyoiQIkOQFHUbMhjACc=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@stuffoflife5290",
+            "authorChannelId": {
+              "value": "UCdHOrwNZHho-SpaCfVugFew"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-06-20T13:49:14Z",
+            "updatedAt": "2025-06-20T13:49:14Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "_JKCpWRCA2ece9vHM_0BiGnyNWI",
+      "id": "UgwAIrH9KSPXOe8bz614AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "FuwzsUwKxXOorh5qBHdxHemDR-o",
+          "id": "UgwAIrH9KSPXOe8bz614AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "\u003ca href=\"https://www.youtube.com/watch?v=_VB39Jo8mAQ&amp;t=630\"\u003e10:30\u003c/a\u003e this has \u003cb\u003eNOTHING\u003c/b\u003e to do with the fashion in which a transaction is made… it’s the beliefs, values &amp; relationships they correlate with money. When you have parents that work &amp; come home and have a happy hunky dory life, they don’t see the grit that goes into making that quantity of money. Of course the child must understand what money is &amp; how virtual payment works… but paying with your phone or a card doesn’t actually have an impact until they are adults. The frictionless process strategy is used in all types of instant gratification concepts.",
+            "textOriginal": "10:30 this has *NOTHING* to do with the fashion in which a transaction is made… it’s the beliefs, values & relationships they correlate with money. When you have parents that work & come home and have a happy hunky dory life, they don’t see the grit that goes into making that quantity of money. Of course the child must understand what money is & how virtual payment works… but paying with your phone or a card doesn’t actually have an impact until they are adults. The frictionless process strategy is used in all types of instant gratification concepts.",
+            "authorDisplayName": "@SalvadorableDaliii",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/QVbDO-_Pjeuc7dAU_L5cGYPWjHqfnzdyuV-6LMAxuIAGBy5iwwxat3tdzOTFlo_nPnI5VwbeKQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@SalvadorableDaliii",
+            "authorChannelId": {
+              "value": "UCyJVWvd-qfty4pV29AgLLPw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-06-19T09:23:19Z",
+            "updatedAt": "2025-06-19T09:23:19Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "9PJPwdbuyPbgBzTKMOuh7UAaJ7w",
+      "id": "UgyRQF-801tYtxKxvM14AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "IAlczeiK6o0-TvbEzyBkt58j-XI",
+          "id": "UgyRQF-801tYtxKxvM14AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "Wait until you figure out that the Dollars you’re using everyday are just as fake",
+            "textOriginal": "Wait until you figure out that the Dollars you’re using everyday are just as fake",
+            "authorDisplayName": "@AustinN-p2g",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lImVEFshLCzwKPwsKil_wI44W3fLO5VgHisdM_-Jtm5ZMsPSMXFTRot9-tSU3zW38Ftw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@AustinN-p2g",
+            "authorChannelId": {
+              "value": "UCTP2-U9SHUkcHKI7pDUcQwA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-06-18T16:29:22Z",
+            "updatedAt": "2025-06-18T16:29:22Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "4dUC3p6dR0xxcLANJ9OApLwZXAI",
+      "id": "Ugwc1Z5H2UBu1nHxkc94AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "wFNT20cDAEDIpvlNkaYEwr2c84M",
+          "id": "Ugwc1Z5H2UBu1nHxkc94AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "He tested on 3 subjects. 1 subject did not change her way of playing. So, only 2/3 chance the subject change.\u003cbr\u003eNot enough confidence to get that conclusion.",
+            "textOriginal": "He tested on 3 subjects. 1 subject did not change her way of playing. So, only 2/3 chance the subject change.\nNot enough confidence to get that conclusion.",
+            "authorDisplayName": "@travelingparadise2823",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_myM6OZxoAduMlu7Nhui3ZWtQE7wpoeeshRzXUCSWQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@travelingparadise2823",
+            "authorChannelId": {
+              "value": "UCliR1RV0XJDUN15TVNUo1Zg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-06-18T10:59:38Z",
+            "updatedAt": "2025-06-18T10:59:38Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "pX50FDvTjE_gUgXwRfB2oS0ZwUE",
+      "id": "UgwIE3hLrimCZpphHIZ4AaABAg",
+      "snippet": {
+        "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+        "videoId": "_VB39Jo8mAQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "u-Q1WbhrE_34uiFDKziUWytPw5o",
+          "id": "UgwIE3hLrimCZpphHIZ4AaABAg",
+          "snippet": {
+            "channelId": "UCsT0YIqwnpJCM-mx7-gSA4Q",
+            "videoId": "_VB39Jo8mAQ",
+            "textDisplay": "My parents has allowed me to have a credit card with a 10K limit since I was 14 and I can spent how every much I want but obviously I never did and almost did. The feeling of having a credit card really kinda makes you spend money without thinking much. Just saying ima pay it later and that later is gonna hurt your future.",
+            "textOriginal": "My parents has allowed me to have a credit card with a 10K limit since I was 14 and I can spent how every much I want but obviously I never did and almost did. The feeling of having a credit card really kinda makes you spend money without thinking much. Just saying ima pay it later and that later is gonna hurt your future.",
+            "authorDisplayName": "@BushYoi",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/8vh98YPX-PQOwCqnO4QhweNU2fjgmbr9SccqntJMMAZl-f-UMP5XiVUBqZdbEVAyB00pwAiVNg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@BushYoi",
+            "authorChannelId": {
+              "value": "UC1w-JOw9OcCnxx7tp9pUo_g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2025-06-18T01:16:58Z",
+            "updatedAt": "2025-06-18T01:16:58Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    }
+  ]
+}

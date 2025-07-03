@@ -1,0 +1,49 @@
+.commentWrappers {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.totalCount {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+}
+
+.commentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.topLevelContainer {
+  display: flex;
+  gap: .6rem;
+}
+
+.topLevelCommentProfileImage {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.topLevelCommentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.topLevelCommentAuthor {
+  font-size: var(--font-micro);
+  font-weight: var(--weight-semi-bold);
+}
+
+.topLevelCommentText {
+  font-family: "Roboto", "Arial", sans-serif;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: var(--color-light-black);
+  font-size: var(--font-micro);
+  line-height: 1.5;
+  margin: 0;
+}

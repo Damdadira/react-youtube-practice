@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router'
 import ChannelInfo from '../../entities/video/ui/ChannelInfo/ChannelInfo'
+import Comment from '../../entities/video/ui/Comments/Comments'
 import RelatedVideos from '../../entities/video/ui/RelatedVideos/RelatedVideos'
 import styles from './styles/index.module.css'
 
@@ -21,9 +22,9 @@ export default function VideoDetail() {
           <div className={styles.channelInfoContainer}>
             <span className={styles.videoTitle}>{title}</span>
             <ChannelInfo id={channelId} name={channelTitle}></ChannelInfo>
-            {/* Comment 컴포넌트 추가하기 */}
           </div>
           <pre className={styles.videoDescription}>{description}</pre>
+          <Comment id={video.id}></Comment>
         </div>
       </article>
       <section className={styles.relatedVideosContainer}>

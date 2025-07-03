@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useYoutubeApi } from '../../../../app/context/YoutubeApiContext';
-import CommentItem from '../../../comment/ui/CommentItem/CommentItem'
+import CommentItem from '../../../comment/ui/CommentItem/CommentItem';
+import ReplyItem from '../../../comment/ui/ReplyItem/ReplyItem';
 import styles from '../Comments/Comments.module.css';
 
 export default function Comments({ id }) {
@@ -20,42 +22,16 @@ export default function Comments({ id }) {
       {isLoading && <div>Loading...</div>}
       {error && <div>Someting is Wrong...😱</div>}
       {comments && (
-        <div className={styles.commentWrappers}>
-          <span className={styles.totalCount}>댓글 {comments.length}개</span>
-          {/* <ul className={styles.commentWrapper}>
-            {comments.map((comment) => {
-              const topLevelComment = comment.snippet.topLevelComment.snippet;
-              return (
-                <>
-                  <li className={styles.topLevelContainer}>
-                    <img
-                      className={styles.topLevelCommentProfileImage}
-                      src={topLevelComment.authorProfileImageUrl}
-                      alt="author"
-                    />
-                    <div className={styles.topLevelCommentContainer}>
-                      <span className={styles.topLevelCommentAuthor}>{topLevelComment.authorDisplayName}</span>
-                      <pre className={styles.topLevelCommentText}>{topLevelComment.textOriginal}</pre>
-                    </div>
-                  </li>
-                  <ul>
-                    test
-                  </ul>
-                </>
-                
-              );
-            })}
-          </ul> */}
-          <ul className={styles.commentWrapper}>
+        <div className={styles.commentsWrappers}>
+          <span className={styles.commentsTotalCount}>댓글 {comments.length}개</span>
+          <div className={styles.commentsWrapper}>
             {comments.map((comment) => (
-              <>
+              <div className={styles.commentsContainer}>
                 <CommentItem comment={comment}></CommentItem>
-                <ul>
-                  test
-                </ul>
-              </>
+                <ReplyItem id={comment.id} totalCount={comment.snippet.totalReplyCount}></ReplyItem>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       )}
     </>

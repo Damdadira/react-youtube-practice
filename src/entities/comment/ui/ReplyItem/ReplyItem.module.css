@@ -1,0 +1,8 @@
+.replyContainer {
+  display: block;
+  padding: .4rem 0 0 3rem;
+}
+
+.none {
+  display: none;
+}

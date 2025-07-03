@@ -1,17 +1,23 @@
-.commentWrappers {
+.commentsWrappers {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 1rem 0;
 }
 
-.totalCount {
+.commentsTotalCount {
   font-size: var(--font-regular);
   font-weight: var(--weight-semi-bold);
 }
 
-.commentWrapper {
+.commentsWrapper {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+}
+
+.commentsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
 }

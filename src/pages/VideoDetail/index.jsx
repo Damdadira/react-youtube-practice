@@ -15,7 +15,7 @@ export default function VideoDetail() {
           type='text/html'
           className={styles.videoPlayer}
           src={`https://www.youtube.com/embed/${video.id}`} 
-          frameborder="0">
+        >
         </iframe>
         <div>
           <div className={styles.channelInfoContainer}>
@@ -26,7 +26,7 @@ export default function VideoDetail() {
           <pre className={styles.videoDescription}>{description}</pre>
         </div>
       </article>
-      <section class={styles.relatedVideosContainer}>
+      <section className={styles.relatedVideosContainer}>
         <RelatedVideos id={channelId}></RelatedVideos>
       </section>
     </section>

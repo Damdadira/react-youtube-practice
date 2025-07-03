@@ -12,4 +12,12 @@ export default class FakeYoutubeClient {
   async channels() {
     return axios.get('/mock/channel.json');
   }
+
+  async comments() {
+    return axios.get('/mock/comment.json');
+  }
+
+  async replies() {
+    return axios.get('/mock/replies.json');
+  }
 }

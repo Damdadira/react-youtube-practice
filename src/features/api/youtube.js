@@ -36,6 +36,35 @@ export default class Youtube {
     .then(items => items.map(item => ({ ...item, id: item.id.videoId })));
   }
 
+  async channelComments(videoId) {
+    return this.apiClient.comments(
+      {
+        params: {
+          part: 'snippet',
+          videoId,
+          maxResults: 50,
+          order: 'relevance'
+        }
+      }
+    )
+    .then(res => res.data.items);
+  }
+
+  // replies
+  // async channelComments(videoId) {
+  //   return this.apiClient.comments(
+  //     {
+  //       params: {
+  //         part: 'snippet',
+  //         videoId,
+  //         maxResults: 50,
+  //         order: 'relevance'
+  //       }
+  //     }
+  //   )
+  //   .then(res => res.data.items);
+  // }
+
   // 앞에 #붙이면 private 함수(비공개 함수)
   async #searchByKeyword(keyword) {
     return this.apiClient.search(

@@ -32,6 +32,7 @@
 }
 
 .videoDescription {
+  font-family: "Roboto", "Arial", sans-serif;
   background: var(--color-light-gray);
   border-radius: 12px;
   white-space: pre-wrap;

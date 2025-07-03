@@ -45,6 +45,7 @@
 .playlistWrappers {
   display: flex;
   gap: .6rem;
+  cursor: pointer;
 }
 
 .playlistThumbnailImage {

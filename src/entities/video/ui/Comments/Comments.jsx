@@ -23,14 +23,29 @@ export default function Comments({ id }) {
       {error && <div>Someting is Wrong...😱</div>}
       {comments && (
         <div className={styles.commentsWrappers}>
-          <span className={styles.commentsTotalCount}>댓글 {comments.length}개</span>
+          <span className={styles.commentsTotalCount}>
+            댓글 {comments.length}개
+          </span>
           <div className={styles.commentsWrapper}>
-            {comments.map((comment) => (
-              <div className={styles.commentsContainer}>
-                <CommentItem comment={comment}></CommentItem>
-                <ReplyItem id={comment.id} totalCount={comment.snippet.totalReplyCount}></ReplyItem>
-              </div>
-            ))}
+            {comments.map((comment) => {
+              const topLevelComment = comment.snippet.topLevelComment.snippet;
+              return (
+                <div className={styles.commentsContainer}>
+                  <CommentItem
+                    comment={{
+                      profile: topLevelComment.authorProfileImageUrl,
+                      author: topLevelComment.authorDisplayName,
+                      text: topLevelComment.textOriginal,
+                      date: topLevelComment.publishedAt,
+                    }}
+                  ></CommentItem>
+                  <ReplyItem
+                    id={comment.id}
+                    totalCount={comment.snippet.totalReplyCount}
+                  ></ReplyItem>
+                </div>
+              );
+            })}
           </div>
         </div>
       )}

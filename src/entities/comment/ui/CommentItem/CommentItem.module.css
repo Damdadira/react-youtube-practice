@@ -3,21 +3,33 @@
   gap: .6rem;
 }
 
-.commentItemImage {
+.commentItemProfile {
   border-radius: 100%;
   width: 40px;
   height: 40px;
 }
 
-.commentItemWrapper {
+.commentItemWrappers {
   display: flex;
   flex-direction: column;
   gap: .4rem;
 }
 
+.commentItemWrapper {
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
 .commentItemAuthor {
   font-size: var(--font-micro);
   font-weight: var(--weight-semi-bold);
+}
+
+.commentItemDate {
+  font-size: var(--font-mini);
+  color: var(--color-medium-gray);
+  padding-bottom: .1rem;
 }
 
 .commentItemText {

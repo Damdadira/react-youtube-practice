@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { useYoutubeApi } from '../../../../app/context/YoutubeApiContext';
+import Loading from '../../../../pages/Loading';
 import CommentItem from '../../../comment/ui/CommentItem/CommentItem';
 import ReplyItem from '../../../comment/ui/ReplyItem/ReplyItem';
 import styles from '../Comments/Comments.module.css';
@@ -18,7 +19,7 @@ export default function Comments({ id }) {
 
   return (
     <>
-      {isLoading && <div>Loading...</div>}
+      {isLoading && <Loading></Loading>}
       {error && <div>Someting is Wrong...😱</div>}
       {comments && (
         <div className={styles.commentsWrappers}>

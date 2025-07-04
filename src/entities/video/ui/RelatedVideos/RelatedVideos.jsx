@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { useYoutubeApi } from '../../../../app/context/YoutubeApiContext';
+import Loading from '../../../../pages/Loading';
 import VideoCard from '../VideoCard/VideoCard';
 import styles from '../RelatedVideos/RelatedVideos.module.css';
 
@@ -17,7 +18,7 @@ export default function RealtedVideos({ id }) {
 
   return (
     <div>
-      {isLoading && <div>Loading...</div>}
+      {isLoading && <Loading></Loading>}
       {error && <div>Someting is Wrong...😱</div>}
       {videos && (
         <ul className={styles.videosContainer}>

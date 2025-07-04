@@ -1,0 +1,48 @@
+.commentItemContainer {
+  display: flex;
+  gap: .6rem;
+}
+
+.commentItemProfile {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.commentItemReplyProfile {
+  width: 30px;
+  height: 30px;
+}
+
+.commentItemWrappers {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+
+.commentItemWrapper {
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+.commentItemAuthor {
+  font-size: var(--font-micro);
+  font-weight: var(--weight-semi-bold);
+}
+
+.commentItemDate {
+  font-size: var(--font-mini);
+  color: var(--color-medium-gray);
+  padding-bottom: .1rem;
+}
+
+.commentItemText {
+  font-family: "Roboto", "Arial", sans-serif;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: var(--color-light-black);
+  font-size: var(--font-micro);
+  line-height: 1.5;
+  margin: 0;
+}

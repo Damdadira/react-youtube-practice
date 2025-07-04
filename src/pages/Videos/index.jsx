@@ -16,6 +16,8 @@ export default function Videos() {
     queryFn: () => youtube.search(keyword),
   });
 
+  console.log('이게 되나?')
+
   return (
     <div>
       {isLoading && <div>Loading...</div>}

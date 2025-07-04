@@ -1,4 +1,33 @@
 .replyContainer {
-  display: block;
-  padding: .4rem 0 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  padding-left: 2rem;
+}
+
+.totalCountButton {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  background: var(--color-white);
+  color: var(--color-dark-blue);
+  font-size: var(--font-micro);
+  font-weight: var(--weight-semi-bold);
+  padding: .4rem 1rem;
+}
+
+.totalCountButton:hover {
+  background: var(--color-light-blue);
+}
+
+.totalCountLabel {
+  padding-bottom: .1rem;
+}
+
+.replyWrappers {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
 }

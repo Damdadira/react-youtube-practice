@@ -1,9 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate, useParams } from 'react-router';
 import { FiSearch } from 'react-icons/fi';
-import styles from './Header.module.css';
 import avatarImage from '../../assets/images/monster.png';
 import clsx from 'clsx';
+import styles from './Header.module.css';
 
 export function Header() {
   const { keyword, videoId } = useParams();

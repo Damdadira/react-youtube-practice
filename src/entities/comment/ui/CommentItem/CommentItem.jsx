@@ -1,4 +1,5 @@
 import { formatAgo } from '../../../../shared/lib/timeago';
+import clsx from 'clsx';
 import styles from '../CommentItem/CommentItem.module.css'
 
 export default function CommentItem ({ comment, type }) {
@@ -8,7 +9,9 @@ export default function CommentItem ({ comment, type }) {
     <ul>
       <li className={styles.commentItemContainer}>
         <img
-          className={styles.commentItemProfile}
+          className={clsx(styles.commentItemProfile, {
+            [styles.commentItemReplyProfile]: isReply
+          })}
           src={comment.profile}
           alt="author"
         />

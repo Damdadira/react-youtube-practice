@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useYoutubeApi } from '../../../../app/context/YoutubeApiContext';
 import CommentItem from '../../../comment/ui/CommentItem/CommentItem';

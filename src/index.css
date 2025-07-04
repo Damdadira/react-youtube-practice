@@ -1,12 +1,14 @@
 :root {
   /* Color */
-  --color-brand: #FF0000;
   --color-white: #ffffff;
   --color-light-black: #000000be;
   --color-black: #000000;
   --color-light-gray: #eeeeee;
   --color-soft-gray: #c6c6c6;
   --color-medium-gray: #606060;
+  --color-light-blue: #b0ddff7c;
+  --color-blue: #0D99FF;
+  --color-dark-blue: #065fd4;
 
   /* Font Size */
   --font-large: 1.6rem;
@@ -31,10 +33,15 @@ body {
 a {
   text-decoration: none;
   color: var(--color-black);
+  cursor: pointer;
 }
 
 ul, li {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+button {
+  cursor: pointer;
 }

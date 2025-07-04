@@ -20,10 +20,12 @@ export default function ReplyItem({ id, totalCount }) {
     <>
       {totalCount > 0 && (
         <div className={styles.replyContainer}>
-          <button onClick={handleClick}>답글 {totalCount}개</button>
-          {replies.length > 0 && (
-            <ul>
-              {replies.map((reply) => {
+          <button className={styles.totalCountButton} onClick={handleClick}>
+            <span className={styles.totalCountLabel}>답글 {totalCount}개</span>
+          </button>
+          <div className={styles.replyWrappers}>
+            {(replies.length > 0 && toggle) &&
+              replies.map((reply) => {
                 const subLevelComment = reply.snippet;
                 return (
                   <CommentItem
@@ -33,12 +35,11 @@ export default function ReplyItem({ id, totalCount }) {
                       text: subLevelComment.textOriginal,
                       date: subLevelComment.publishedAt,
                     }}
-                    type='reply'
+                    type="reply"
                   ></CommentItem>
                 );
               })}
-            </ul>
-          )}
+          </div>
         </div>
       )}
     </>

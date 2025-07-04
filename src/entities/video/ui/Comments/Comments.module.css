@@ -13,11 +13,11 @@
 .commentsWrapper {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 1rem;
 }
 
 .commentsContainer {
   display: flex;
   flex-direction: column;
-  gap: .2rem;
+  gap: .4rem;
 }

@@ -27,7 +27,7 @@
   height: 5em;
   border-radius: 50%;
   border: 2px solid black;
-  background-color: #f27405;
+  background-color: var(--color-orange);
   margin-bottom: -6em;
   margin-left: 0em;
   z-index: -1;
@@ -43,11 +43,11 @@
   transform: rotate(140deg);
   border: 4px solid transparent;
   box-shadow:
-  inset 0px 16px #a85103,
-  inset 0px 16px 1px 1px #a85103;
+  inset 0px 16px var(--color-dark-orange),
+  inset 0px 16px 1px 1px var(--color-dark-orange);
   -moz-box-shadow:
-  inset 0px 16px #a85103,
-  inset 0px 16px 1px 1px #a85103;
+  inset 0px 16px var(--color-dark-orange),
+  inset 0px 16px 1px 1px var(--color-dark-orange);
 }
 
 .antenna::after {
@@ -59,7 +59,7 @@
   width: 1em;
   height: 0.5em;
   border-radius: 50%;
-  background-color: #f69e50;
+  background-color: var(--color-light-orange);
 }
 
 .antenna::before {
@@ -71,7 +71,7 @@
   width: 1.5em;
   height: 0.8em;
   border-radius: 50%;
-  background-color: #f69e50;
+  background-color: var(--color-light-orange);
 }
 
 .a1 {
@@ -82,11 +82,11 @@
   height: 5.5em;
   border-radius: 50px;
   background-image: linear-gradient(
-    #171717,
-    #171717,
-    #353535,
-    #353535,
-    #171717
+    var(--color-antenna-black1),
+    var(--color-antenna-black1),
+    var(--color-antenna-black2),
+    var(--color-antenna-black2),
+    var(--color-antenna-black1)
   );
   transform: rotate(-29deg);
   clip-path: polygon(50% 0%, 49% 100%, 52% 100%);
@@ -100,8 +100,8 @@
   width: 0.5em;
   height: 0.5em;
   border-radius: 50%;
-  border: 2px solid black;
-  background-color: #979797;
+  border: 2px solid var(--color-dark);
+  background-color: var(--color-gray);
   z-index: 99;
 }
 
@@ -112,13 +112,13 @@
   width: 12em;
   height: 4em;
   border-radius: 50px;
-  background-color: #171717;
+  background-color: var(--color-antenna-black1);
   background-image: linear-gradient(
-    #171717,
-    #171717,
-    #353535,
-    #353535,
-    #171717
+    var(--color-antenna-black1),
+    var(--color-antenna-black1),
+    var(--color-antenna-black2),
+    var(--color-antenna-black2),
+    var(--color-antenna-black1)
   );
   margin-right: 5em;
   clip-path: polygon(
@@ -141,17 +141,17 @@
   width: 0.5em;
   height: 0.5em;
   border-radius: 50%;
-  border: 2px solid black;
-  background-color: #979797;
+  border: 2px solid var(--color-black);
+  background-color: var(--color-gray);
   z-index: 99;
 }
 
 .notfoundText {
-  background-color: black;
+  background-color: var(--color-black);
   padding-left: 0.3em;
   padding-right: 0.3em;
-  font-size: 0.75em;
-  color: white;
+  font-size: var(--font-mini);
+  color: var(--color-white);
   letter-spacing: 0;
   border-radius: 5px;
   z-index: 10;
@@ -162,11 +162,11 @@
   height: 10em;
   margin-top: 3em;
   border-radius: 15px;
-  background-color: #d36604;
+  background-color: var(--color-medium-orange);
   display: flex;
   justify-content: center;
-  border: 2px solid #1d0e01;
-  box-shadow: inset 0.2em 0.2em #e69635;
+  border: 2px solid var(--color-tv-black1);
+  box-shadow: inset 0.2em 0.2em var(--color-tv-orange);
 }
 
 .tv::after {
@@ -176,9 +176,9 @@
   height: 9em;
   border-radius: 15px;
   background:
-    repeating-radial-gradient(#d36604 0 0.0001%, #00000070 0 0.0002%) 50% 0/2500px
+    repeating-radial-gradient(var(--color-medium-orange) 0 0.0001%, var(--color-tv-black2) 0 0.0002%) 50% 0/2500px
       2500px,
-    repeating-conic-gradient(#d36604 0 0.0001%, #00000070 0 0.0002%) 60% 60%/2500px
+    repeating-conic-gradient(var(--color-medium-orange) 0 0.0001%, var(--color-tv-black2) 0 0.0002%) 60% 60%/2500px
       2500px;
   background-blend-mode: difference;
   opacity: 0.09;
@@ -198,7 +198,7 @@
   align-self: center;
   justify-content: center;
   border-radius: 15px;
-  box-shadow: 3.5px 3.5px 0px #e69635;
+  box-shadow: 3.5px 3.5px 0px var(--color-tv-orange);
 }
 
 .screenOut {
@@ -220,11 +220,11 @@
   width: 13em;
   height: 7.85em;
   font-family: Montserrat;
-  border: 2px solid #1d0e01;
+  border: 2px solid var(--color-tv-black1);
   background:
-    repeating-radial-gradient(#000 0 0.0001%, #ffffff 0 0.0002%) 50% 0/2500px
+    repeating-radial-gradient(var(--color-black) 0 0.0001%, var(--color-white) 0 0.0002%) 50% 0/2500px
       2500px,
-    repeating-conic-gradient(#000 0 0.0001%, #ffffff 0 0.0002%) 60% 60%/2500px
+    repeating-conic-gradient(var(--color-black) 0 0.0001%, var(--color-white) 0 0.0002%) 60% 60%/2500px
       2500px;
   background-blend-mode: difference;
   animation: b 0.2s infinite alternate;
@@ -233,8 +233,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  color: #252525;
+  font-weight: var(--weight-bold);
+  color: var(--color-screen-black);
   letter-spacing: 0.15em;
   text-align: center;
 }
@@ -246,29 +246,29 @@
   font-family: Montserrat;
   background: linear-gradient(
     to right,
-    #002fc6 0%,
-    #002bb2 14.2857142857%,
-    #3a3a3a 14.2857142857%,
-    #303030 28.5714285714%,
-    #ff0afe 28.5714285714%,
-    #f500f4 42.8571428571%,
-    #6c6c6c 42.8571428571%,
-    #626262 57.1428571429%,
-    #0affd9 57.1428571429%,
-    #00f5ce 71.4285714286%,
-    #3a3a3a 71.4285714286%,
-    #303030 85.7142857143%,
-    white 85.7142857143%,
-    #fafafa 100%
+    var(--color-screenM-blue1) 0%,
+    var(--color-screenM-blue2) 14.2857142857%,
+    var(--color-screenM-black1) 14.2857142857%,
+    var(--color-screenM-black2) 28.5714285714%,
+    var(--color-screenM-pink1) 28.5714285714%,
+    var(--color-screenM-pink2) 42.8571428571%,
+    var(--color-screenM-gray1) 42.8571428571%,
+    var(--color-screenM-gray2) 57.1428571429%,
+    var(--color-screenM-mint1) 57.1428571429%,
+    var(--color-screenM-mint2) 71.4285714286%,
+    var(--color-screenM-black1) 71.4285714286%,
+    var(--color-screenM-black2) 85.7142857143%,
+    var(--color-white) 85.7142857143%,
+    var(--color-screenM-white) 100%
   );
   border-radius: 10px;
-  border: 2px solid black;
+  border: 2px solid var(--color-black);
   z-index: 99;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  color: #252525;
+  font-weight: var(--weight-bold);
+  color: var(--color-screen-black);
   letter-spacing: 0.15em;
   text-align: center;
   overflow: hidden;
@@ -288,20 +288,20 @@
   height: 68.4782608696%;
   background: linear-gradient(
     to right,
-    white 0%,
-    #fafafa 14.2857142857%,
-    #ffe60a 14.2857142857%,
-    #f5dc00 28.5714285714%,
-    #0affd9 28.5714285714%,
-    #00f5ce 42.8571428571%,
-    #10ea00 42.8571428571%,
-    #0ed600 57.1428571429%,
-    #ff0afe 57.1428571429%,
-    #f500f4 71.4285714286%,
-    #ed0014 71.4285714286%,
-    #d90012 85.7142857143%,
-    #002fc6 85.7142857143%,
-    #002bb2 100%
+    var(--color-white) 0%,
+    var(--color-screenM-white) 14.2857142857%,
+    var(--color-screenM-yellow1) 14.2857142857%,
+    var(--color-screenM-yellow2) 28.5714285714%,
+    var(--color-screenM-mint1) 28.5714285714%,
+    var(--color-screenM-mint2) 42.8571428571%,
+    var(--color-screenM-green1) 42.8571428571%,
+    var(--color-screenM-green2) 57.1428571429%,
+    var(--color-screenM-pink1) 57.1428571429%,
+    var(--color-screenM-pink2) 71.4285714286%,
+    var(--color-screenM-red1) 71.4285714286%,
+    var(--color-screenM-red2) 85.7142857143%,
+    var(--color-screenM-blue1) 85.7142857143%,
+    var(--color-screenM-blue2) 100%
   );
 }
 
@@ -310,18 +310,18 @@
   height: 21.7391304348%;
   background: linear-gradient(
     to right,
-    #006c6b 0%,
-    #005857 16.6666666667%,
-    white 16.6666666667%,
-    #fafafa 33.3333333333%,
-    #001b75 33.3333333333%,
-    #001761 50%,
-    #6c6c6c 50%,
-    #626262 66.6666666667%,
-    #929292 66.6666666667%,
-    #888888 83.3333333333%,
-    #3a3a3a 83.3333333333%,
-    #303030 100%
+    var(--color-screenM-green3) 0%,
+    var(--color-screenM-green4) 16.6666666667%,
+    var(--color-white) 16.6666666667%,
+    var(--color-screenM-white) 33.3333333333%,
+    var(--color-screenM-blue3) 33.3333333333%,
+    var(--color-screenM-blue4) 50%,
+    var(--color-screenM-gray1) 50%,
+    var(--color-screenM-gray2) 66.6666666667%,
+    var(--color-screenM-gray3) 66.6666666667%,
+    var(--color-screenM-gray4) 83.3333333333%,
+    var(--color-screenM-black1) 83.3333333333%,
+    var(--color-screenM-black2) 100%
   );
 }
 
@@ -343,7 +343,7 @@
 .line3 {
   width: 2px;
   height: 0.5em;
-  background-color: black;
+  background-color: var(--color-black);
   border-radius: 25px 25px 0px 0px;
   margin-top: 0.5em;
 }
@@ -352,7 +352,7 @@
   flex-grow: 1;
   width: 2px;
   height: 1em;
-  background-color: black;
+  background-color: var(--color-black);
   border-radius: 25px 25px 0px 0px;
 }
 
@@ -360,8 +360,8 @@
   width: 4.25em;
   align-self: center;
   height: 8em;
-  background-color: #e69635;
-  border: 2px solid #1d0e01;
+  background-color: var(--color-tv-orange);
+  border: 2px solid var(--color-tv-black1);
   padding: 0.6em;
   border-radius: 10px;
   display: flex;
@@ -369,19 +369,19 @@
   justify-content: center;
   flex-direction: column;
   row-gap: 0.75em;
-  box-shadow: 3px 3px 0px #e69635;
+  box-shadow: 3px 3px 0px var(--color-tv-orange);
 }
 
 .b1 {
   width: 1.65em;
   height: 1.65em;
   border-radius: 50%;
-  background-color: #7f5934;
-  border: 2px solid black;
+  background-color: var(--color-brown);
+  border: 2px solid var(--color-black);
   box-shadow:
-  inset 2px 2px 1px #b49577,
-  -2px 0px #513721,
-  -2px 0px 0px 1px black;
+  inset 2px 2px 1px var(--color-light-brown),
+  -2px 0px var(--color-dark-brown),
+  -2px 0px 0px 1px var(--color-black);
 }
 
 .b1::before {
@@ -393,7 +393,7 @@
   border-radius: 5px;
   width: 0.1em;
   height: 0.4em;
-  background-color: #000000;
+  background-color: var(--color-black);
 }
 
 .b1::after {
@@ -405,7 +405,7 @@
   border-radius: 5px;
   width: 0.1em;
   height: 0.55em;
-  background-color: #000000;
+  background-color: var(--color-black);
 }
 
 .b1 div {
@@ -416,19 +416,19 @@
   transform: rotate(45deg);
   width: 0.15em;
   height: 1.5em;
-  background-color: #000000;
+  background-color: var(--color-black);
 }
 
 .b2 {
   width: 1.65em;
   height: 1.65em;
   border-radius: 50%;
-  background-color: #7f5934;
-  border: 2px solid black;
+  background-color: var(--color-brown);
+  border: 2px solid var(--color-black);
   box-shadow:
-  inset 2px 2px 1px #b49577,
-  -2px 0px #513721,
-  -2px 0px 0px 1px black;
+  inset 2px 2px 1px var(--color-light-brown),
+  -2px 0px var(--color-dark-brown),
+  -2px 0px 0px 1px var(--color-black);
 }
 
 .b2::before {
@@ -440,7 +440,7 @@
   border-radius: 5px;
   width: 0.15em;
   height: 0.4em;
-  background-color: #000000;
+  background-color: var(--color-black);
 }
 
 .b2::after {
@@ -451,7 +451,7 @@
   transform: rotate(-45deg);
   width: 0.15em;
   height: 1.5em;
-  background-color: #000000;
+  background-color: var(--color-black);
 }
 
 .speakers {
@@ -471,15 +471,15 @@
   width: 0.65em;
   height: 0.65em;
   border-radius: 50%;
-  background-color: #7f5934;
-  border: 2px solid black;
-  box-shadow: inset 1.25px 1.25px 1px #b49577;
+  background-color: var(--color-brown);
+  border: 2px solid var(--color-black);
+  box-shadow: inset 1.25px 1.25px 1px var(--color-light-brown);
 }
 
 .speakers .g {
   width: auto;
   height: 2px;
-  background-color: #171717;
+  background-color: var(--color-antenna-black1);
 }
 
 .bottom {
@@ -494,8 +494,8 @@
 .base1 {
   height: 1em;
   width: 2em;
-  border: 2px solid #171717;
-  background-color: #4d4d4d;
+  border: 2px solid var(--color-antenna-black1);
+  background-color: var(--color-dark-gray);
   margin-top: -0.15em;
   z-index: -1;
 }
@@ -503,8 +503,8 @@
 .base2 {
   height: 1em;
   width: 2em;
-  border: 2px solid #171717;
-  background-color: #4d4d4d;
+  border: 2px solid var(--color-antenna-black1);
+  background-color: var(--color-dark-gray);
   margin-top: -0.15em;
   z-index: -1;
 }
@@ -513,7 +513,7 @@
   position: absolute;
   height: 0.15em;
   width: 17.5em;
-  background-color: #171717;
+  background-color: var(--color-antenna-black1);
   margin-top: 0.8em;
 }
 

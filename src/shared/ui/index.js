@@ -1,1 +1,2 @@
-export { Header } from './header'   //./header/index.js와 동일
+export { Header } from './header/Header.jsx'
+export { Popup } from './popup/Popup.jsx'

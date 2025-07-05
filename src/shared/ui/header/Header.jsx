@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate, useParams } from 'react-router';
 import { FiSearch } from 'react-icons/fi';
 import avatarImage from '../../assets/images/monster.png';
+import { Popup } from '../popup/Popup.jsx';
 import clsx from 'clsx';
 import styles from './Header.module.css';
 
@@ -9,6 +10,7 @@ export function Header() {
   const { keyword, videoId } = useParams();
   const navigate = useNavigate();
   const [text, setText] = useState('');
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     setText(keyword || '');
@@ -41,11 +43,6 @@ export function Header() {
   const handleSubmit = (e) => {
     e.preventDefault();
     navigate(`/${text}`);
-  };
-
-  const handleButtonClick = (e) => {
-    e.preventDefault();
-    alert('준비중입니다.');
   };
 
   return (
@@ -83,12 +80,13 @@ export function Header() {
           <button
             className={styles.button}
             key={item}
-            onClick={handleButtonClick}
+            onClick={() => setOpen(true)}
           >
             {item}
           </button>
         ))}
       </div>
+      {open && <Popup text='기능을 준비중입니다.' onClose={() => setOpen(false)}></Popup>}
     </header>
   );
 }

@@ -18,8 +18,6 @@ export default function Videos() {
     queryFn: () => youtube.search(keyword),
   });
 
-  // const isLoading = true;
-
   return (
     <div>
       {isLoading && <Loading></Loading>}

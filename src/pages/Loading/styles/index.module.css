@@ -17,7 +17,7 @@
   height: 8px;
   position: absolute;
   border-radius: 50%;
-  background-color: #000;
+  background-color: var(--color-black);
   left: 15%;
   transform-origin: 50%;
   animation: typing-circle7124 0.5s alternate infinite ease;
@@ -57,7 +57,7 @@
   width: 5px;
   height: 4px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--color-typing-black);
   position: absolute;
   top: 30px;
   transform-origin: 50%;

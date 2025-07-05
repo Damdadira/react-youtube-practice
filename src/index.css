@@ -1,14 +1,54 @@
 :root {
   /* Color */
   --color-white: #ffffff;
+  --color-screenM-white: #fafafa;
   --color-light-black: #000000be;
   --color-black: #000000;
+  --color-antenna-black1: #171717;
+  --color-antenna-black2: #353535;
+  --color-tv-black1: #1d0e01;
+  --color-tv-black2: #00000070;
+  --color-screen-black: #252525;
+  --color-screenM-black1: #3a3a3a;
+  --color-screenM-black2: #303030;
+  --color-typing-black: rgba(0, 0, 0, 0.2);
   --color-light-gray: #eeeeee;
   --color-soft-gray: #c6c6c6;
+  --color-gray: #979797;
   --color-medium-gray: #606060;
+  --color-dark-gray: #4d4d4d;
+  --color-screenM-gray1: #6c6c6c;
+  --color-screenM-gray2: #626262;
+  --color-screenM-gray3: #929292;
+  --color-screenM-gray4: #888888;
   --color-light-blue: #b0ddff7c;
-  --color-blue: #0D99FF;
+  --color-blue: #0d99ff;
   --color-dark-blue: #065fd4;
+  --color-screenM-blue1: #002fc6;
+  --color-screenM-blue2: #002bb2;
+  --color-screenM-blue3: #001b75;
+  --color-screenM-blue4: #001761;
+  --color-light-orange: #f69e50;
+  --color-tv-orange: #e69635;
+  --color-orange: #f27405;
+  --color-medium-orange: #d36604;
+  --color-dark-orange: #a85103;
+  --color-light-brown: #b49577;
+  --color-brown: #7f5934;
+  --color-dark-brown: #513721;
+  --color-screenM-pink1: #ff0afe;
+  --color-screenM-pink2: #f500f4;
+  --color-screenM-mint1: #0affd9;
+  --color-screenM-mint2: #00f5ce;
+  --color-screenM-yellow1: #ffe60a;
+  --color-screenM-yellow2: #f5dc00;
+  --color-screenM-green1: #10ea00;
+  --color-screenM-green2: #0ed600;
+  --color-screenM-green3: #006c6b;
+  --color-screenM-green4: #005857;
+  --color-screenM-red1: #ed0014;
+  --color-screenM-red2: #d90012;
+  
 
   /* Font Size */
   --font-large: 1.6rem;

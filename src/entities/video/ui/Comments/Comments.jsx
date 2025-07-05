@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { useYoutubeApi } from '../../../../app/context/YoutubeApiContext';
-import Loading from '../../../../pages/Loading';
+import Loading from '../../../../pages/Loading/index.jsx';
+import Error from '../../../../pages/Error/index.jsx'
 import CommentItem from '../../../comment/ui/CommentItem/CommentItem';
 import ReplyItem from '../../../comment/ui/ReplyItem/ReplyItem';
 import styles from '../Comments/Comments.module.css';
@@ -20,7 +21,7 @@ export default function Comments({ id }) {
   return (
     <>
       {isLoading && <Loading></Loading>}
-      {error && <div>Someting is Wrong...😱</div>}
+      {error && <Error></Error>}
       {comments && (
         <div className={styles.commentsWrappers}>
           <span className={styles.commentsTotalCount}>

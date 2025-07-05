@@ -1,6 +1,8 @@
 import { useParams } from 'react-router';
 import { useQuery } from '@tanstack/react-query';
 import { useYoutubeApi } from '../../app/context/YoutubeApiContext.jsx';
+import Loading from '../Loading/index.jsx'
+import Error from '../Error/index.jsx'
 import VideoCard from '../../entities/video/ui/VideoCard/VideoCard.jsx';
 import styles from './styles/index.module.css';
 
@@ -18,8 +20,8 @@ export default function Videos() {
 
   return (
     <div>
-      {isLoading && <div>Loading...</div>}
-      {error && <div>Someting is Wrong...😱</div>}
+      {isLoading && <Loading></Loading>}
+      {error && <Error></Error>}
       {videos && (
         <ul className={styles.videosContainer}>
           {videos.map((video) => (

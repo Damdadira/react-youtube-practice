@@ -14,7 +14,7 @@ export function Popup({ text, onClose }) {
         <div className={styles.cardWrapper}>
           <p className={styles.cardDescription}>{text}</p>
           <div className={styles.buttonWrapper}>
-            <button className={styles.cardButton}>확인</button>
+            <button className={styles.cardButton} onClick={onClose}>확인</button>
           </div>
         </div>
       </div>

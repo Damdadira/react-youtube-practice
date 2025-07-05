@@ -34,10 +34,6 @@
   cursor: pointer;
 }
 
-.closeButton:hover svg {
-  fill: var(--color-gray);
-}
-
 .closeButton svg {
   fill: var(--color-black);
 }

@@ -16,7 +16,7 @@
   width: 8px;
   height: 8px;
   position: absolute;
-  border-radius: 50%;
+  border-radius: var(--radius-50);
   background-color: var(--color-black);
   left: 15%;
   transform-origin: 50%;
@@ -27,13 +27,13 @@
   0% {
     top: 20px;
     height: 5px;
-    border-radius: 50px 50px 25px 25px;
+    border-radius: var(--radius-50-pixel) var(--radius-50-pixel) var(--radius-25) var(--radius-25);
     transform: scaleX(1.7);
   }
 
   40% {
     height: 8px;
-    border-radius: 50%;
+    border-radius: var(--radius-50);
     transform: scaleX(1);
   }
 
@@ -56,7 +56,7 @@
 .typingShadow {
   width: 5px;
   height: 4px;
-  border-radius: 50%;
+  border-radius: var(--radius-50);
   background-color: var(--color-typing-black);
   position: absolute;
   top: 30px;

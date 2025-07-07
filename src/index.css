@@ -2,6 +2,7 @@
   /* Color */
   --color-white: #ffffff;
   --color-screenM-white: #fafafa;
+  --color-header-button-white: #f1f1f1;
   --color-light-black: #000000be;
   --color-black: #000000;
   --color-antenna-black1: #171717;
@@ -11,7 +12,10 @@
   --color-screen-black: #252525;
   --color-screenM-black1: #3a3a3a;
   --color-screenM-black2: #303030;
+  --color-background-black: #0f0f0f;
   --color-typing-black: rgba(0, 0, 0, 0.2);
+  --color-switch-black: rgba(0, 0, 0, 0.1);
+  --color-slider-black: #2a2a2a;
   --color-light-gray: #eeeeee;
   --color-soft-gray: #c6c6c6;
   --color-gray: #979797;
@@ -21,13 +25,16 @@
   --color-screenM-gray2: #626262;
   --color-screenM-gray3: #929292;
   --color-screenM-gray4: #888888;
+  --color-video-discription-gray: #aaaaaa;
   --color-light-blue: #b0ddff7c;
-  --color-blue: #0d99ff;
+  --color-blue: #0f73bb;
   --color-dark-blue: #065fd4;
   --color-screenM-blue1: #002fc6;
   --color-screenM-blue2: #002bb2;
   --color-screenM-blue3: #001b75;
   --color-screenM-blue4: #001761;
+  --color-switch-blue: #00a6ff;
+  --color-reply-blue: #6987a056;
   --color-light-orange: #f69e50;
   --color-tv-orange: #e69635;
   --color-orange: #f27405;
@@ -40,6 +47,7 @@
   --color-screenM-pink2: #f500f4;
   --color-screenM-mint1: #0affd9;
   --color-screenM-mint2: #00f5ce;
+  --color-yellow: #ffcf48;
   --color-screenM-yellow1: #ffe60a;
   --color-screenM-yellow2: #f5dc00;
   --color-screenM-green1: #10ea00;
@@ -48,7 +56,23 @@
   --color-screenM-green4: #005857;
   --color-screenM-red1: #ed0014;
   --color-screenM-red2: #d90012;
-  
+
+      /* Theme Color */
+  --color-background: var(--color-white);
+  --color-header-background: rgba(255, 255, 255, 0.9);
+  --color-header-button: var(--color-light-gray);
+  --color-header-button-active: var(--color-black);
+  --color-header-button-text: var(--color-white);
+  --color-logo: var(--color-black);
+  --color-search-background: var(--color-white);
+  --color-search-border: var(--color-soft-gray);
+  --color-search-outline: #999999;
+  --color-video-title: var(--color-black);
+  --color-video-discription: var(--color-medium-gray);
+  --color-detail-discription-background: var(--color-light-gray);
+  --color-detail-discription-color: var(--color-light-black);
+  --color-comment-text: var(--color-light-black); 
+  --color-reply-button-text: var(--color-dark-blue);
 
   /* Font Size */
   --font-large: 1.6rem;
@@ -62,6 +86,43 @@
   --weight-bold: 800;
   --weight-semi-bold: 600;
   --weight-regular: 400;
+
+  /* Border Radius */
+  --radius-0: 0px;
+  --radius-5: 5px;
+  --radius-10: 10px;
+  --radius-12: 12px;
+  --radius-15: 15px;
+  --radius-20: 20px;
+  --radius-25: 25px;
+  --radius-30: 30px;
+  --radius-45: 45%
+  --radius-50-pixel: 50px;
+  --radius-50: 50%;
+  --radius-100: 100%;
+}
+
+html.dark {
+  --color-background: var(--color-background-black);
+  --color-header-background: var(--color-background-black);
+  --color-header-button: rgba(255, 255, 255, 0.1);
+  --color-header-button-active: var(--color-header-button-white);
+  --color-header-button-text: var(--color-black);
+  --color-logo: var(--color-white);
+  --color-search-background: hsl(0, 0%, 7%);
+  --color-search-border: hsl(0, 0%, 18.82%);
+  --color-search-outline: hsl(0, 0%, 18.82%);
+  --color-video-title: var(--color-header-button-white);
+  --color-video-discription: var(--color-video-discription-gray);
+  --color-detail-discription-background: rgba(255, 255, 255, 0.1);
+  --color-detail-discription-color: var(--color-header-button-white);
+  --color-comment-text: var(--color-soft-gray);
+  --color-reply-button-text: var(--color-blue);
+  --color-reply-button-hover: var(--color-reply-blue);
+}
+
+#root {
+  background: var(--color-background)
 }
 
 body {

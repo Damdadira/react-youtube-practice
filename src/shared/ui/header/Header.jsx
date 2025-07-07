@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate, useParams } from 'react-router';
 import { FiSearch } from 'react-icons/fi';
-import avatarImage from '../../assets/images/monster.png';
 import { Popup } from '../popup/Popup.jsx';
+import { Theme } from '../theme/Theme.jsx';
 import clsx from 'clsx';
 import styles from './Header.module.css';
 
@@ -64,7 +64,7 @@ export function Header() {
             <FiSearch />
           </button>
         </form>
-        <img className={styles.avatarImage} src={avatarImage} alt="avatar" />
+        <Theme></Theme>
       </div>
       <div
         className={clsx(styles.buttonContainer, {
@@ -76,7 +76,7 @@ export function Header() {
         onMouseLeave={handleMouseUp}
         onMouseUp={handleMouseUp}
       >
-        {tabList().map((item) => (
+        {initialTabList().map((item) => (
           <button
             className={styles.button}
             key={item}
@@ -91,7 +91,7 @@ export function Header() {
   );
 }
 
-const tabList = () => {
+const initialTabList = () => {
   return [
     '전체',
     '음악',

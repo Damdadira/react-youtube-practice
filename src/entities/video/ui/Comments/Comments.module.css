@@ -6,6 +6,7 @@
 }
 
 .commentsTotalCount {
+  color: var(--color-video-title);
   font-size: var(--font-regular);
   font-weight: var(--weight-semi-bold);
 }

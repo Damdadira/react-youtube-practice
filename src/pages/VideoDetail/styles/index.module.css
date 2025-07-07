@@ -14,7 +14,7 @@
 
 .videoPlayer {
   width: 100%;
-  border-radius: 12px;
+  border-radius: var(--radius-12);
   border: none;
   aspect-ratio: 16 / 9;
 }
@@ -28,17 +28,18 @@
 .videoTitle {
   font-size: var(--font-large);
   font-weight: var(--weight-semi-bold);
+  color: var(--color-video-title);
   padding: .4rem;
 }
 
 .videoDescription {
   font-family: "Roboto", "Arial", sans-serif;
-  background: var(--color-light-gray);
-  border-radius: 12px;
+  background: var(--color-detail-discription-background);
+  border-radius: var(--radius-12);
   white-space: pre-wrap;
   word-break: break-word;
   padding: 1rem;
-  color: var(--color-light-black);
+  color: var(--color-comment-text);
   font-size: var(--font-micro);
   font-weight: var(--weight-semi-bold);
   line-height: 1.5;

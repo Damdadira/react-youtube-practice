@@ -73,6 +73,7 @@
   --color-detail-discription-color: var(--color-light-black);
   --color-comment-text: var(--color-light-black); 
   --color-reply-button-text: var(--color-dark-blue);
+  --color-typing-shadow: var(--color-typing-black);
 
   /* Font Size */
   --font-large: 1.6rem;
@@ -119,6 +120,7 @@ html.dark {
   --color-comment-text: var(--color-soft-gray);
   --color-reply-button-text: var(--color-blue);
   --color-reply-button-hover: var(--color-reply-blue);
+  --color-typing-shadow: var(--color-medium-gray);
 }
 
 #root {

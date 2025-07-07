@@ -28,7 +28,7 @@ export default class Youtube {
           channelId, 
           maxResults: 25, 
           order: 'date', 
-          type: 'video'
+          type: 'video',
         }
       }
     )

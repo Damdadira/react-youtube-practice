@@ -9,26 +9,28 @@ import styles from './styles/index.module.css';
 export default function Videos() {
   const { keyword } = useParams();
   const { youtube } = useYoutubeApi();
-  const {
-    isLoading,
-    error,
-    data: videos,
-  } = useQuery({
-    queryKey: ['videos', keyword],
-    queryFn: () => youtube.search(keyword),
-  });
+  // const {
+  //   isLoading,
+  //   error,
+  //   data: videos,
+  // } = useQuery({
+  //   queryKey: ['videos', keyword],
+  //   queryFn: () => youtube.search(keyword),
+  // });
+
+  const isLoading = true;
 
   return (
     <div>
       {isLoading && <Loading></Loading>}
-      {error && <Error></Error>}
+      {/* {error && <Error></Error>}
       {videos && (
         <ul className={styles.videosContainer}>
           {videos.map((video) => (
             <VideoCard key={video.id} video={video}></VideoCard>
           ))}
         </ul>
-      )}
+      )} */}
     </div>
   );
 }

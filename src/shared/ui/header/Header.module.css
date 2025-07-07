@@ -41,6 +41,7 @@
   border: 1px solid var(--color-search-border);
   border-radius: var(--radius-20) var(--radius-0) var(--radius-0) var(--radius-20);
   font-size: var(--font-regular);
+  color: var(--color-logo);
 }
 
 .formInput:focus {

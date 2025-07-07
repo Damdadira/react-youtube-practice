@@ -1,7 +1,7 @@
 .wrapper {
   position: fixed;
   width: 100%;
-  background: rgba(255, 255, 255, 0.9);;
+  background: var(--color-header-background);
   backdrop-filter: blur(48px);
 }
 
@@ -24,6 +24,7 @@
 }
 
 .logoText {
+  color: var(--color-logo);
   font-size: var(--font-large);
   font-weight: var(--weight-semi-bold);
 }
@@ -36,13 +37,14 @@
 .formInput {
   width: 27rem;
   padding: .4rem 1rem;
-  border: 1px solid var(--color-soft-gray);
+  background: var(--color-search-background);
+  border: 1px solid var(--color-search-border);
   border-radius: var(--radius-20) var(--radius-0) var(--radius-0) var(--radius-20);
   font-size: var(--font-regular);
 }
 
 .formInput:focus {
-  outline-color: #999;
+  outline-color: var(--color-search-outline);
   width: 32rem;
 }
 
@@ -51,16 +53,17 @@
   justify-content: center;
   align-items: center;
   width: 3.5rem;
-  border: 1px solid var(--color-soft-gray);
+  border: 1px solid var(--color-search-border);
   border-left: none;
   border-radius: var(--radius-0) var(--radius-20) var(--radius-20) var(--radius-0);
-  background: #f0f0f0be;
+  background: var(--color-header-button);
 }
 
 .formButton svg {
   width: 20px;
   height: 20px;
   padding-right: .4rem;
+  stroke: var(--color-logo);
 }
 
 .buttonContainer {
@@ -83,7 +86,8 @@
 }
 
 .button {
-  background: #eee;
+  background: var(--color-header-button);
+  color: var(--color-logo);
   border: none;
   border-radius: var(--radius-20);
   padding: .4rem 1rem;
@@ -93,8 +97,8 @@
 }
 
 .button:first-child {
-  background: var(--color-black);
-  color: var(--color-white);
+  background: var(--color-header-button-active);
+  color: var(--color-header-button-text);
 }
 
 .none {

@@ -74,6 +74,8 @@
   --color-comment-text: var(--color-light-black); 
   --color-reply-button-text: var(--color-dark-blue);
   --color-typing-shadow: var(--color-typing-black);
+  --color-antenna-base1: var(--color-dark-gray);
+  --color-antenna-base3: var(--color-antenna-black1);
 
   /* Font Size */
   --font-large: 1.6rem;
@@ -121,6 +123,8 @@ html.dark {
   --color-reply-button-text: var(--color-blue);
   --color-reply-button-hover: var(--color-reply-blue);
   --color-typing-shadow: var(--color-medium-gray);
+  --color-antenna-base1: var(--color-screenM-black1);
+  --color-antenna-base3: var(--color-medium-gray);
 }
 
 #root {

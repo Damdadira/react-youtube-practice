@@ -13,4 +13,5 @@
 .channelInfoName {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
+  color: var(--color-video-title);
 }

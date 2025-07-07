@@ -11,15 +11,15 @@
   align-items: center;
   border: none;
   border-radius: var(--radius-20);
-  background: var(--color-white);
-  color: var(--color-dark-blue);
+  background: var(--color-background);
+  color: var(--color-reply-button-text);
   font-size: var(--font-micro);
   font-weight: var(--weight-semi-bold);
   padding: .4rem 1rem;
 }
 
 .totalCountButton:hover {
-  background: var(--color-light-blue);
+  background: var(--color-reply-button-hover);
 }
 
 .totalCountLabel {

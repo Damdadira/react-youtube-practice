@@ -25,7 +25,7 @@
 .antenna {
   width: 5em;
   height: 5em;
-  border-radius: 50%;
+  border-radius: var(--radius-50);
   border: 2px solid black;
   background-color: var(--color-orange);
   margin-bottom: -6em;
@@ -39,7 +39,7 @@
   width: 50px;
   height: 56px;
   margin-left: 1.68em;
-  border-radius: 45%;
+  border-radius: var(--radius-45);
   transform: rotate(140deg);
   border: 4px solid transparent;
   box-shadow:
@@ -58,7 +58,7 @@
   transform: rotate(-25deg);
   width: 1em;
   height: 0.5em;
-  border-radius: 50%;
+  border-radius: var(--radius-50);
   background-color: var(--color-light-orange);
 }
 
@@ -70,7 +70,7 @@
   transform: rotate(-20deg);
   width: 1.5em;
   height: 0.8em;
-  border-radius: 50%;
+  border-radius: var(--radius-50);
   background-color: var(--color-light-orange);
 }
 
@@ -80,7 +80,7 @@
   left: -130%;
   width: 12em;
   height: 5.5em;
-  border-radius: 50px;
+  border-radius: var(--radius-50-pixel);
   background-image: linear-gradient(
     var(--color-antenna-black1),
     var(--color-antenna-black1),
@@ -99,7 +99,7 @@
   transform: rotate(45deg);
   width: 0.5em;
   height: 0.5em;
-  border-radius: 50%;
+  border-radius: var(--radius-50);
   border: 2px solid var(--color-dark);
   background-color: var(--color-gray);
   z-index: 99;
@@ -111,7 +111,7 @@
   left: -10%;
   width: 12em;
   height: 4em;
-  border-radius: 50px;
+  border-radius: var(----radius-50-pixel);
   background-color: var(--color-antenna-black1);
   background-image: linear-gradient(
     var(--color-antenna-black1),
@@ -140,7 +140,7 @@
   left: 94%;
   width: 0.5em;
   height: 0.5em;
-  border-radius: 50%;
+  border-radius: var(--radius-50);
   border: 2px solid var(--color-black);
   background-color: var(--color-gray);
   z-index: 99;
@@ -153,7 +153,7 @@
   font-size: var(--font-mini);
   color: var(--color-white);
   letter-spacing: 0;
-  border-radius: 5px;
+  border-radius: var(--radius-5);
   z-index: 10;
 }
 
@@ -161,7 +161,7 @@
   width: 20em;
   height: 10em;
   margin-top: 3em;
-  border-radius: 15px;
+  border-radius: var(--radius-15);
   background-color: var(--color-medium-orange);
   display: flex;
   justify-content: center;
@@ -174,7 +174,7 @@
   position: absolute;
   width: 17em;
   height: 9em;
-  border-radius: 15px;
+  border-radius: var(--radius-15);
   background:
     repeating-radial-gradient(var(--color-medium-orange) 0 0.0001%, var(--color-tv-black2) 0 0.0002%) 50% 0/2500px
       2500px,
@@ -197,14 +197,14 @@
   align-items: center;
   align-self: center;
   justify-content: center;
-  border-radius: 15px;
+  border-radius: var(--radius-15);
   box-shadow: 3.5px 3.5px 0px var(--color-tv-orange);
 }
 
 .screenOut {
   width: auto;
   height: auto;
-  border-radius: 10px;
+  border-radius: var(--radius-10);
 }
 
 .screenOut1 {
@@ -213,7 +213,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: var(--radius-10);
 }
 
 .screen {
@@ -228,7 +228,7 @@
       2500px;
   background-blend-mode: difference;
   animation: b 0.2s infinite alternate;
-  border-radius: 10px;
+  border-radius: var(--radius-10);
   z-index: 99;
   display: flex;
   align-items: center;
@@ -261,7 +261,7 @@
     var(--color-white) 85.7142857143%,
     var(--color-screenM-white) 100%
   );
-  border-radius: 10px;
+  border-radius: var(--radius-10);
   border: 2px solid var(--color-black);
   z-index: 99;
   display: flex;
@@ -344,7 +344,7 @@
   width: 2px;
   height: 0.5em;
   background-color: var(--color-black);
-  border-radius: 25px 25px 0px 0px;
+  border-radius: var(--radius-25) var(--radius-25) var(--radius-0) var(--radius-0);
   margin-top: 0.5em;
 }
 
@@ -353,7 +353,7 @@
   width: 2px;
   height: 1em;
   background-color: var(--color-black);
-  border-radius: 25px 25px 0px 0px;
+  border-radius: var(--radius-25) var(--radius-25) var(--radius-0) var(--radius-0);
 }
 
 .buttonsDiv {
@@ -363,7 +363,7 @@
   background-color: var(--color-tv-orange);
   border: 2px solid var(--color-tv-black1);
   padding: 0.6em;
-  border-radius: 10px;
+  border-radius: var(--radius-10);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -375,7 +375,7 @@
 .b1 {
   width: 1.65em;
   height: 1.65em;
-  border-radius: 50%;
+  border-radius: var(--radius-50);
   background-color: var(--color-brown);
   border: 2px solid var(--color-black);
   box-shadow:
@@ -390,7 +390,7 @@
   margin-top: 1em;
   margin-left: 0.5em;
   transform: rotate(47deg);
-  border-radius: 5px;
+  border-radius: var(--radius-5);
   width: 0.1em;
   height: 0.4em;
   background-color: var(--color-black);
@@ -402,7 +402,7 @@
   margin-top: 0.9em;
   margin-left: 0.8em;
   transform: rotate(47deg);
-  border-radius: 5px;
+  border-radius: var(--radius-5);
   width: 0.1em;
   height: 0.55em;
   background-color: var(--color-black);
@@ -422,7 +422,7 @@
 .b2 {
   width: 1.65em;
   height: 1.65em;
-  border-radius: 50%;
+  border-radius: var(--radius-50);
   background-color: var(--color-brown);
   border: 2px solid var(--color-black);
   box-shadow:
@@ -437,7 +437,7 @@
   margin-top: 1.05em;
   margin-left: 0.8em;
   transform: rotate(-45deg);
-  border-radius: 5px;
+  border-radius: var(--radius-5);
   width: 0.15em;
   height: 0.4em;
   background-color: var(--color-black);
@@ -470,7 +470,7 @@
 .g13 {
   width: 0.65em;
   height: 0.65em;
-  border-radius: 50%;
+  border-radius: var(--radius-50);
   background-color: var(--color-brown);
   border: 2px solid var(--color-black);
   box-shadow: inset 1.25px 1.25px 1px var(--color-light-brown);

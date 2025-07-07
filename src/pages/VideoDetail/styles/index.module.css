@@ -14,7 +14,7 @@
 
 .videoPlayer {
   width: 100%;
-  border-radius: 12px;
+  border-radius: var(--radius-12);
   border: none;
   aspect-ratio: 16 / 9;
 }
@@ -34,7 +34,7 @@
 .videoDescription {
   font-family: "Roboto", "Arial", sans-serif;
   background: var(--color-light-gray);
-  border-radius: 12px;
+  border-radius: var(--radius-12);
   white-space: pre-wrap;
   word-break: break-word;
   padding: 1rem;

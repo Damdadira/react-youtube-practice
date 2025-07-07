@@ -49,7 +49,7 @@ export function Header() {
     <header className={styles.wrapper}>
       <div className={styles.headerContainer}>
         <Link to="/" className={styles.logoContainer}>
-          <img className={styles.logo} src="/public/youtube.png" alt="logo" />
+          <img className={styles.logo} src="/youtube.png" alt="logo" />
           <span className={styles.logoText}>YoungTube</span>
         </Link>
         <form className={styles.formContainer} onSubmit={handleSubmit}>

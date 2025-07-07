@@ -57,7 +57,7 @@
   --color-screenM-red1: #ed0014;
   --color-screenM-red2: #d90012;
 
-      /* Theme Color */
+  /* Theme Color */
   --color-background: var(--color-white);
   --color-header-background: rgba(255, 255, 255, 0.9);
   --color-header-button: var(--color-light-gray);

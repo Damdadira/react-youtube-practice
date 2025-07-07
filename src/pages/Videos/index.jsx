@@ -18,19 +18,17 @@ export default function Videos() {
   //   queryFn: () => youtube.search(keyword),
   // });
 
-  const isLoading = true;
-
   return (
     <div>
       {isLoading && <Loading></Loading>}
-      {/* {error && <Error></Error>}
+      {error && <Error></Error>}
       {videos && (
         <ul className={styles.videosContainer}>
           {videos.map((video) => (
             <VideoCard key={video.id} video={video}></VideoCard>
           ))}
         </ul>
-      )} */}
+      )}
     </div>
   );
 }

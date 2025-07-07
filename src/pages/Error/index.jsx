@@ -6,7 +6,6 @@ export default function Error() {
       <div className={styles.mainWrapper}>
         <div className={styles.main}>
           <div className={styles.antenna}>
-            <div className={styles.antennaShadow}></div>
             <div className={styles.a1}></div>
             <div className={styles.a1d}></div>
             <div className={styles.a2}></div>

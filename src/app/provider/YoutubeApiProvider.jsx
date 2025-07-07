@@ -9,11 +9,11 @@ const client = new FakeYoutubeClient();
 const youtube = new Youtube(client);
 
 export function YoutubeApiProvider({ children }) {
-  const [darkMode, setDarkMode] = useState(false);
-  const toggleDarkMode = () => setDarkMode(prev => !prev);
+  const [theme, setTheme] = useState(true);
+  const toggleTheme = () => setTheme(prev => !prev);
 
   return (
-    <YoutubeApiContext.Provider value={{ youtube, darkMode, toggleDarkMode }}>
+    <YoutubeApiContext.Provider value={{ youtube, theme, toggleTheme }}>
       {children}
     </YoutubeApiContext.Provider>
   );

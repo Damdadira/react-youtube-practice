@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate, useParams } from 'react-router';
 import { FiSearch } from 'react-icons/fi';
-import avatarImage from '../../assets/images/monster.png';
 import { Popup } from '../popup/Popup.jsx';
 import { Theme } from '../theme/Theme.jsx';
 import clsx from 'clsx';
@@ -65,10 +64,7 @@ export function Header() {
             <FiSearch />
           </button>
         </form>
-        <div className={styles.themeContainer}>
-          <Theme></Theme>
-          <img className={styles.avatarImage} src={avatarImage} alt="avatar" />
-        </div>
+        <Theme></Theme>
       </div>
       <div
         className={clsx(styles.buttonContainer, {

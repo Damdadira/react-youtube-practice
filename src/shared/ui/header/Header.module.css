@@ -63,19 +63,6 @@
   padding-right: .4rem;
 }
 
-.themeContainer {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.avatarImage {
-  width: 44px;
-  height: 44px;
-  border: 1px solid #999;
-  border-radius: 100%;
-}
-
 .buttonContainer {
   display: flex;
   gap: .6rem;

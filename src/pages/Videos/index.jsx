@@ -9,14 +9,14 @@ import styles from './styles/index.module.css';
 export default function Videos() {
   const { keyword } = useParams();
   const { youtube } = useYoutubeApi();
-  // const {
-  //   isLoading,
-  //   error,
-  //   data: videos,
-  // } = useQuery({
-  //   queryKey: ['videos', keyword],
-  //   queryFn: () => youtube.search(keyword),
-  // });
+  const {
+    isLoading,
+    error,
+    data: videos,
+  } = useQuery({
+    queryKey: ['videos', keyword],
+    queryFn: () => youtube.search(keyword),
+  });
 
   return (
     <div>

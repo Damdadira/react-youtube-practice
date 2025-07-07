@@ -63,6 +63,12 @@
   padding-right: .4rem;
 }
 
+.themeContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .avatarImage {
   width: 44px;
   height: 44px;

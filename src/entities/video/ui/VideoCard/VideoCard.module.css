@@ -60,14 +60,15 @@
   flex-direction: column;
   gap: .4rem;
   padding: .2rem;
+  color: var(--color-video-discription);
 }
 
 .playlistDiscriptionWrapper {
   display: flex;
   flex-direction: column;
-  color: var(--color-medium-gray);
   font-size: var(--font-micro);
   font-weight: var(--weight-regular);
+  color: var(--color-video-discription);
 }
 
 @media (max-width: 1024px) {

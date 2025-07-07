@@ -76,7 +76,7 @@ export function Header() {
         onMouseLeave={handleMouseUp}
         onMouseUp={handleMouseUp}
       >
-        {tabList().map((item) => (
+        {initialTabList().map((item) => (
           <button
             className={styles.button}
             key={item}
@@ -91,7 +91,7 @@ export function Header() {
   );
 }
 
-const tabList = () => {
+const initialTabList = () => {
   return [
     '전체',
     '음악',

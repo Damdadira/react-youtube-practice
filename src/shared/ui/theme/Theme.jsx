@@ -5,7 +5,7 @@ export function Theme() {
   const { theme, toggleTheme } = useYoutubeApi();
 
   return (
-    <label class={styles.switch}>
+    <label className={styles.switch}>
       <input 
         id="checkbox" 
         type="checkbox" 

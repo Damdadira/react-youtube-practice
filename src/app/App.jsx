@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import Root from '../pages/Root/index.jsx'
 import Error from '../pages/Error/index.jsx'
+import Loading from '../pages/Loading/index.jsx'
 import Videos from '../pages/Videos/index.jsx'
 import VideoDetail from '../pages/VideoDetail/index.jsx'
 
@@ -21,7 +22,15 @@ const router = createBrowserRouter([
       {
         path: "/watch/:videoId",
         element: <VideoDetail />
-      }
+      },
+      {
+        path: "/test-error",
+        element: <Error />
+      },
+      {
+        path: "/test-loading",
+        element: <Loading />
+      },
     ]
     
   }

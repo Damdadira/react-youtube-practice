@@ -1,6 +1,6 @@
 # YoungTube
-유튜브 인터페이스를 리액트로 제작한 프로젝트입니다.<br/>
-**YouTube Data API**를 활용해 실제 데이터를 연동하고 **동영상 시청, 검색, 관련 동영상 탐색, 댓글과 답글, 다크 모드** 등 다양한 기능을 구현했습니다.
+- 유튜브 인터페이스를 **React**와 **YouTube Data API**로 제작한 프로젝트입니다.
+- 검색, 동영상 시청, 관련 동영상 탐색, 댓글과 답글, 다크 모드 등 **다양한 기능**이 포함되어 있으며 **반응형 UI**로 구현되었습니다.
 <br/><br/>
 
 ## 🖥 화면 구성
@@ -15,7 +15,7 @@
 </details>
 
 <details>
- <summary><h3 style="display:inline; margin-left:4px">3️⃣ 비디오 상세 화면</h3></summary>
+ <summary><h3 style="display:inline; margin-left:4px">3️⃣ 동영상 상세 화면</h3></summary>
  <img src=".github/assets/video_detail.gif" />
 </details>
 
@@ -33,3 +33,42 @@
  <summary><h3 style="display:inline; margin-left:4px">6️⃣ 에러 화면</h3></summary>
  <img src=".github/assets/video_error.gif" />
 </details>
+<br/>
+
+## 💡 주요 기능 및 구현
+- **API 버전**: YouTube Data API v3
+- **인증 방식**: API Key
+<br/>
+
+### ✅ 홈 페이지
+- **사용 API:** `videos?key={개인 API키}&part=snippet&maxResults=25&order=date&chart=mostPopular`
+- **설명:** 인기 동영상을 최신순으로 25개만 불러와 홈 화면에 표시합니다.
+
+### ✅ 키워드 검색
+- **사용 API:** `search?key={개인 API키}&part=snippet&maxResults=25&order=date&type=video&q=rose`
+- **설명:** 키워드로 검색한 동영상을 최신순으로 25개만 불러와 홈 화면에 표시합니다.
+
+### ✅ 동영상 상세 페이지, 관련 동영상
+- **사용 API:** `videos, search API에서 불러온 데이터 사용`
+- **설명:** 동영상에 대한 자세한 정보(동영상 제목, 채널 썸네일, 채널명, 게시일)를 제공 받아 동영상 상세 화면에 표시합니다.
+
+### ✅ 유튜버 프로필 이미지
+- **사용 API:** `channels?key={개인 API키}&part=snippet&id={channelId}`
+- **설명:** 채널 운영자의 프로필 이미지 주소를 가져와 동영상 상세 화면에서 이미지로 보여줍니다.
+
+### ✅ 댓글
+- **사용 API:** `commentThreads?key={개인 API키}&part=snippet&videoId={videoId}&maxResults=50&order=relevance`
+- **설명:** 댓글에 대한 자세한 정보(총 댓글수, 총 답글수, 작성자 프로필 이미지, 작성자 이름, 댓글 내용, 게시일)를 50개만 불러와 관련성 높은순으로 댓글 화면에 표시합니다.
+
+### ✅ 답글
+- **사용 API:** `comments?key={개인 API키}&part=snippet&parentId={commentId}`
+- **설명:** 답글에 대한 자세한 정보(작성자 프로필 이미지, 작성자 이름, 댓글 내용, 게시일)를 50개만 불러와 답글 화면에 표시합니다.
+
+### ✅ 로딩 페이지
+- **설명:** 데이터가 로딩 중일 때 사용자에게 로딩 상태를 보여줍니다.
+
+### ✅ 에러 페이지
+- **설명:** 잘못된 접근 또는 오류 발생 시 사용자에게 에러 메시지를 보여줍니다.
+
+### ✅ 테마 기능
+- **설명:** 토글 버튼으로 다크/라이트 모드로 전환할 수 있으며 localStorage에 저장하여 상태를 유지합니다.

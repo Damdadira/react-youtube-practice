@@ -1,6 +1,6 @@
 # YoungTube
 <div align="center">
-  <img src=".github/assets/video/video_home.gif" alt="video">
+  <img src=".github/assets/video/video_home.gif" />
 </div>
 <br/>
 
@@ -12,23 +12,34 @@
 ## 🖥 화면 구성
 <details>
  <summary><h3 style="display:inline; margin-left:4px">1️⃣ Home</h3></summary>
- <img src=".github/assets/image/img_home_light.png" /><br/><br/>
- <img src=".github/assets/image/img_home_dark.png" />
+ <h4>📷 이미지</h4>
+ <img src=".github/assets/video/video_home.gif" />
 </details>
 
 <details>
  <summary><h3 style="display:inline; margin-left:4px">2️⃣ Search</h3></summary>
+ <h4>📷 이미지</h4>
  <img src=".github/assets/video/video_search.gif" />
 </details>
 
 <details>
-<summary><h3 style="display:inline; margin-left:4px">3️⃣ Video Detail</h3></summary>
+ <summary><h3 style="display:inline; margin-left:4px">3️⃣ Video Detail</h3></summary>
+ <h4>📷 이미지</h4>
+ <img src=".github/assets/image/img_video_detail.png" />
 </details>
 
 <details>
-<summary><h3 style="display:inline; margin-left:4px">4️⃣ Loading</h3></summary>
+ <summary><h3 style="display:inline; margin-left:4px">4️⃣ Comment & Reply</h3></summary>
+ <h4>📷 이미지</h4>
+ <img src=".github/assets/image/img_reply.png" />
 </details>
 
 <details>
-<summary><h3 style="display:inline; margin-left:4px">5️⃣ Error</h3></summary>
+ <summary><h3 style="display:inline; margin-left:4px">5️⃣ Loading</h3></summary>
+ <h4>📷 이미지</h4>
+ <img src=".github/assets/video/video_loading.gif" />
+</details>
+
+<details>
+ <summary><h3 style="display:inline; margin-left:4px">6️⃣ Error</h3></summary>
 </details>

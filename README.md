@@ -15,7 +15,7 @@
 </details>
 
 <details>
- <summary><h3 style="display:inline; margin-left:4px">3️⃣ 동영상 상세 화면</h3></summary>
+ <summary><h3 style="display:inline; margin-left:4px">3️⃣ 비디오 상세 화면</h3></summary>
  <img src=".github/assets/video_detail.gif" />
 </details>
 
@@ -54,17 +54,17 @@
 </details>
 
 <details>
- <summary><h3 style="display:inline; margin-left:4px">동영상 상세 페이지, 관련 동영상</h3></summary>
+ <summary><h3 style="display:inline; margin-left:4px">비디오 상세 페이지, 관련 동영상</h3></summary>
  
  - **사용 API:** `videos, search API에서 불러온 데이터 사용`
- - **설명:** 동영상에 대한 자세한 정보(동영상 제목, 채널 썸네일, 채널명, 게시일)를 제공 받아 동영상 상세 화면에 표시합니다.
+ - **설명:** 동영상에 대한 자세한 정보(동영상 제목, 채널 썸네일, 채널명, 게시일)를 제공 받아 비디오 상세 화면에 표시합니다.
 </details>
 
 <details>
  <summary><h3 style="display:inline; margin-left:4px">유튜버 프로필 이미지</h3></summary>
  
  - **사용 API:** `channels?key={개인 API키}&part=snippet&id={channelId}`
- - **설명:** 채널 운영자의 프로필 이미지 주소를 가져와 동영상 상세 화면에서 이미지로 보여줍니다.
+ - **설명:** 채널 운영자의 프로필 이미지 주소를 가져와 비디오 상세 화면에서 이미지로 보여줍니다.
 </details>
 
 <details>
@@ -98,9 +98,46 @@
  
  - **설명:** 토글 버튼으로 다크/라이트 모드로 전환할 수 있으며 localStorage에 저장하여 상태를 유지합니다.
 </details>
+<br/>
 
-
-
+## 🌐 라우터 구조
+<table>
+    <thead>
+      <tr>
+        <th>페이지</th>
+        <th>경로</th>
+        <th>설명</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>홈</td>
+        <td>/</td>
+        <td>비디오 목록 표시</td>
+      </tr>
+      <tr>
+        <td>검색 결과</td>
+        <td>/:keyword</td>
+        <td>검색 결과과 일치하는 비디오 목록 표시</td>
+      </tr>
+      <tr>
+        <td>비디오 상세</td>
+        <td>/watch/:videoId</td>
+        <td>선택한 비디오의 상세 정보, 댓글, 답글, 관련 영상 표시</td>
+      </tr>
+      <tr>
+        <td>에러</td>
+        <td>/test-error</td>
+        <td>에러 발생 시 표시</td>
+      </tr>
+      <tr>
+        <td>로딩</td>
+        <td>/test-loading</td>
+        <td>API 요청 중 딜레이 되는 경우 표시</td>
+      </tr>
+    </tbody>
+  </table>
+  <br/>
 
 
 

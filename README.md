@@ -243,7 +243,7 @@
 - Google Cloud Console에서 **YouTube Data API v3**를 활성화하고 키를 발급받습니다.
 - 프로젝트 루트에 `.env`파일을 만들고 아래와 같이 설정하세요.
 ```
-VITE_YOUTUBE_API_KEY=발급받은 키
+VITE_YOUTUBE_API_KEY=발급 받은 키
 ```
 
 ### 실행
@@ -258,3 +258,20 @@ npm run dev
 
 ## 📍 홈페이지 주소
 https://young-tube.netlify.app/
+
+<br/>
+
+## 📚 Git 사용 규칙
+- `{}`는 기호가 아니라 설명을 의미합니다.
+<br/>
+
+### Branch
+- **feat/{기능 설명}:** 새로운 기능을 개발하는 브랜치 → feat/error, fet/video-card
+- **style/{기능 설명}:** 스타일 관련 수정하는 브랜치 → style/popup
+<br/>
+
+### Commit Message
+- **feat: {작업 내용 요약}:** 새로운 기능 추가 → feat: 에러 컴포넌트 추가
+- **style: {작업 내용 요약}:** 스타일 관련 수정 → style: 에러 컴포넌트 스타일링
+- **fix: {작업 내용 요약}:** 버그 수정 → fix: search 파라미터 수정
+- **chore: {작업 내용 요약}:** 빌드 설정 수정 → chore: api key 추가

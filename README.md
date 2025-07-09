@@ -233,3 +233,25 @@
  ┗ 📜main.jsx
 ```
 <br/>
+
+## 🎯 실행 방법
+- **Node.js 18 이상 권장**
+- **YouTube Data API v3 개인 키 필요**
+<br/>
+
+### API Key 설정
+- Google Cloud Console에서 **YouTube Data API v3**를 활성화하고 키를 발급받습니다.
+- 프로젝트 루트에 `.env`파일을 만들고 아래와 같이 설정하세요.
+```
+VITE_YOUTUBE_API_KEY=발급받은 키
+```
+
+### 실행
+```bash
+# 패키지 설치
+npm install   # 또는 npm i
+
+# 개발 서버 실행
+npm run dev
+```
+<br/>

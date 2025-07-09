@@ -141,19 +141,23 @@
 
 ## 🛠 기술 스택
 #### 🕹 프론트엔드
-<div>
+- **프레임워크/빌드:**
   <img src="https://img.shields.io/badge/React-%2320232a.svg?style=flat-square&logo=react&logoColor=%2361DAFB" />&nbsp;
-  <img src="https://img.shields.io/badge/React_Router-CA4245?style=flat-square&logo=react-router&logoColor=white" />&nbsp;
+  <img src="https://img.shields.io/badge/Vite-%23646CFF.svg?style=flat-square&logo=vite&logoColor=white" />
+- **라우팅:**
+  <img src="https://img.shields.io/badge/React_Router-CA4245?style=flat-square&logo=react-router&logoColor=white" />
+- **상태 관리:**
   <img src="https://img.shields.io/badge/Context_API-000000?style=flat-square&logoColor=white" />&nbsp;
-  <img src="https://img.shields.io/badge/-React%20Query-FF4154?style=flat-square&logo=react%20query&logoColor=white" />&nbsp;
+  <img src="https://img.shields.io/badge/-React%20Query-FF4154?style=flat-square&logo=react%20query&logoColor=white" />
+- **API:**
   <img src="https://img.shields.io/badge/Axios-%2364f.svg?style=flat-square&logoColor=white" />&nbsp;
+- **스타일링:**
   <img src="https://img.shields.io/badge/CSS_Modules-hotpink.svg?style=flat-square&logoColor=white" />&nbsp;
-  <img src="https://img.shields.io/badge/Vite-%23646CFF.svg?style=flat-square&logo=vite&logoColor=white" />&nbsp;
-</div>
 <br/>
 
 #### 🚀 배포 도구
-<img src="https://img.shields.io/badge/Netlify-%23000000.svg?style=flat-square&logo=netlify&logoColor=#00C7B7">
+- **배포/호스팅:**
+  <img src="https://img.shields.io/badge/Netlify-%23000000.svg?style=flat-square&logo=netlify&logoColor=#00C7B7">
 <br/>
 
 ## 🧩 폴더 구조
@@ -230,6 +234,4 @@
  ┣ 📜index.css                          // 전역 스타일 정의
  ┗ 📜main.jsx
 ```
-
-
-
+<br/>

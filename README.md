@@ -156,5 +156,80 @@
 <img src="https://img.shields.io/badge/Netlify-%23000000.svg?style=flat-square&logo=netlify&logoColor=#00C7B7">
 <br/>
 
+## 🧩 폴더 구조
+```
+📦src
+ ┣ 📂app
+ ┃ ┣ 📂context
+ ┃ ┃ ┗ 📜YoutubeApiContext.jsx          // 전역 상태 공유를 위한 Context 생성
+ ┃ ┣ 📂provider
+ ┃ ┃ ┗ 📜YoutubeApiProvider.jsx         // Context Provider 및 API 로직 관리
+ ┃ ┗ 📜App.jsx
+ ┣ 📂entities
+ ┃ ┣ 📂comment
+ ┃ ┃ ┗ 📂ui
+ ┃ ┃ ┃ ┣ 📂CommentItem                  // 개별 댓글 컴포넌트
+ ┃ ┃ ┃ ┃ ┣ 📜CommentItem.jsx            
+ ┃ ┃ ┃ ┃ ┗ 📜CommentItem.module.css
+ ┃ ┃ ┃ ┗ 📂ReplyItem                    // 개별 답글 컴포넌트
+ ┃ ┃ ┃ ┃ ┣ 📜ReplyItem.jsx
+ ┃ ┃ ┃ ┃ ┗ 📜ReplyItem.module.css
+ ┃ ┗ 📂video
+ ┃ ┃ ┗ 📂ui
+ ┃ ┃ ┃ ┣ 📂ChannelInfo                  // 채널 운영자 정보 표시(프로필 이미지, 이름)
+ ┃ ┃ ┃ ┃ ┣ 📜ChannelInfo.jsx
+ ┃ ┃ ┃ ┃ ┗ 📜ChannelInfo.module.css
+ ┃ ┃ ┃ ┣ 📂Comments                     // 댓글, 답글 리스트 컴포넌트
+ ┃ ┃ ┃ ┃ ┣ 📜Comments.jsx
+ ┃ ┃ ┃ ┃ ┗ 📜Comments.module.css
+ ┃ ┃ ┃ ┣ 📂RelatedVideos                // 관련 비디오 리스트 컴포넌트
+ ┃ ┃ ┃ ┃ ┣ 📜RelatedVideos.jsx
+ ┃ ┃ ┃ ┃ ┗ 📜RelatedVideos.module.css
+ ┃ ┃ ┃ ┗ 📂VideoCard                    // 동영상 썸네일 카드 컴포넌트
+ ┃ ┃ ┃ ┃ ┣ 📜VideoCard.jsx
+ ┃ ┃ ┃ ┃ ┗ 📜VideoCard.module.css
+ ┣ 📂features
+ ┃ ┗ 📂api
+ ┃ ┃ ┣ 📜fakeYoutubeClient.js           // 테스트용 Mock Data 정의
+ ┃ ┃ ┣ 📜youtube.js                     // API 명세 및 파라미터 정의
+ ┃ ┃ ┗ 📜youtubeClient.js               // 실제 API 호출 로직 정의
+ ┣ 📂pages
+ ┃ ┣ 📂Error                            // 에러 페이지
+ ┃ ┃ ┣ 📂styles
+ ┃ ┃ ┃ ┗ 📜index.module.css
+ ┃ ┃ ┗ 📜index.jsx
+ ┃ ┣ 📂Loading                          // 로딩 페이지
+ ┃ ┃ ┣ 📂styles
+ ┃ ┃ ┃ ┗ 📜index.module.css
+ ┃ ┃ ┗ 📜index.jsx
+ ┃ ┣ 📂Root                             // 공통 레이아웃(헤더, 메인 컨테이너)
+ ┃ ┃ ┗ 📜index.jsx
+ ┃ ┣ 📂VideoDetail                      // 비디오 상세 페이지(영상, 채널, 댓글, 답글)
+ ┃ ┃ ┣ 📂styles
+ ┃ ┃ ┃ ┗ 📜index.module.css
+ ┃ ┃ ┗ 📜index.jsx
+ ┃ ┗ 📂Videos                           // 비디오 목록 페이지
+ ┃ ┃ ┣ 📂styles
+ ┃ ┃ ┃ ┗ 📜index.module.css
+ ┃ ┃ ┗ 📜index.jsx
+ ┣ 📂shared
+ ┃ ┣ 📂lib
+ ┃ ┃ ┗ 📂timeago                        // 시간 포맷 변환 유틸 함수
+ ┃ ┃ ┃ ┗ 📜index.js
+ ┃ ┗ 📂ui
+ ┃ ┃ ┣ 📂header                         // 헤더 컴포넌트
+ ┃ ┃ ┃ ┣ 📜Header.jsx
+ ┃ ┃ ┃ ┗ 📜Header.module.css
+ ┃ ┃ ┣ 📂popup                          // 팝업창 컴포넌트
+ ┃ ┃ ┃ ┣ 📜Popup.jsx
+ ┃ ┃ ┃ ┗ 📜Popup.module.css
+ ┃ ┃ ┣ 📂theme                          // 테마 토글 버튼 컴포넌트
+ ┃ ┃ ┃ ┣ 📜Theme.jsx
+ ┃ ┃ ┃ ┗ 📜Theme.module.css
+ ┃ ┃ ┗ 📜index.js                       // 공용 UI 컴포넌트 인덱스
+ ┣ 📜index.css                          // 전역 스타일 정의
+ ┗ 📜main.jsx
+```
+
 
 

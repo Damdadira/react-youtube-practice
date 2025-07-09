@@ -143,8 +143,10 @@
 #### 🕹 프론트엔드
 <div>
   <img src="https://img.shields.io/badge/React-%2320232a.svg?style=flat-square&logo=react&logoColor=%2361DAFB" />&nbsp;
+  <img src="https://img.shields.io/badge/React_Router-CA4245?style=flat-square&logo=react-router&logoColor=white" />&nbsp;
   <img src="https://img.shields.io/badge/Context_API-000000?style=flat-square&logoColor=white" />&nbsp;
-  <img src="https://img.shields.io/badge/-React%20Query-FF4154?style=flat-square&logo=react%20query&logoColor=white" />
+  <img src="https://img.shields.io/badge/-React%20Query-FF4154?style=flat-square&logo=react%20query&logoColor=white" />&nbsp;
+  <img src="https://img.shields.io/badge/Axios-%2364f.svg?style=flat-square&logoColor=white" />&nbsp;
   <img src="https://img.shields.io/badge/CSS_Modules-hotpink.svg?style=flat-square&logoColor=white" />&nbsp;
   <img src="https://img.shields.io/badge/Vite-%23646CFF.svg?style=flat-square&logo=vite&logoColor=white" />&nbsp;
 </div>

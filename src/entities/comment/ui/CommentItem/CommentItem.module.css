@@ -47,3 +47,10 @@
   line-height: 1.5;
   margin: 0;
 }
+
+@media (max-width: 390px) {
+  .commentItemProfile {
+    width: 36px;
+    height: 36px;
+  }
+}

@@ -129,3 +129,17 @@
     width: 13rem;
   }
 }
+
+@media (max-width: 390px) {
+  .formContainer {
+    height: 2.3rem;
+  }
+
+  .formInput {
+    width: 5rem;
+  }
+
+  .formInput:focus {
+    width: 8rem;
+  }
+}

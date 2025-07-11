@@ -22,3 +22,9 @@
   flex-direction: column;
   gap: .4rem;
 }
+
+@media (max-width: 390px) {
+  .commentsContainer {
+    gap: 0;
+  }
+}

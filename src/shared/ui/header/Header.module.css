@@ -73,13 +73,8 @@
   padding: 0rem 2rem .6rem 2rem;
   overflow-x: auto;
   white-space: nowrap;
-  cursor: grab;
   user-select: none;
   scroll-behavior: auto;
-}
-
-.buttonContainer:active {
-  cursor: grabbing;
 }
 
 .buttonContainer::-webkit-scrollbar {
@@ -127,5 +122,19 @@
 
   .formInput:focus {
     width: 13rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .formContainer {
+    height: 2.3rem;
+  }
+
+  .formInput {
+    width: 5rem;
+  }
+
+  .formInput:focus {
+    width: 8rem;
   }
 }

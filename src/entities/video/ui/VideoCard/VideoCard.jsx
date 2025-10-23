@@ -18,15 +18,29 @@ export default function VideoCard({ video, type }) {
       onClick={handleClick}
     >
       <img
-        className={isPlayList ? styles.playlistThumbnailImage : styles.thumbnailImage}
+        className={
+          isPlayList ? styles.playlistThumbnailImage : styles.thumbnailImage
+        }
         src={thumbnails.medium.url}
         alt={title}
       />
-      <div className={isPlayList ? styles.playlistDiscriptionWrappers : styles.discriptionWrappers}>
+      <div
+        className={
+          isPlayList
+            ? styles.playlistDiscriptionWrappers
+            : styles.discriptionWrappers
+        }
+      >
         <span className={styles.discriptionTitle} title={title}>
           {title}
         </span>
-        <div className={isPlayList ? styles.playlistDiscriptionWrapper : styles.discriptionWrapper}>
+        <div
+          className={
+            isPlayList
+              ? styles.playlistDiscriptionWrapper
+              : styles.discriptionWrapper
+          }
+        >
           <span>{channelTitle}</span>
           <span>{formatAgo(publishedAt, 'ko')}</span>
         </div>

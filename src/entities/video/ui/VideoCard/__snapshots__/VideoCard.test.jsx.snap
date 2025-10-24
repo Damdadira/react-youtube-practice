@@ -1,0 +1,69 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`VideoCard > renders grid type correctly 1`] = `
+<DocumentFragment>
+  <li
+    class="_wrappers_8ba6ec"
+  >
+    <img
+      alt="title"
+      class="_thumbnailImage_8ba6ec"
+      src="http://image/"
+    />
+    <div
+      class="_discriptionWrappers_8ba6ec"
+    >
+      <span
+        class="_discriptionTitle_8ba6ec"
+        title="title"
+      >
+        title
+      </span>
+      <div
+        class="_discriptionWrapper_8ba6ec"
+      >
+        <span>
+          channelTitle
+        </span>
+        <span>
+          방금
+        </span>
+      </div>
+    </div>
+  </li>
+</DocumentFragment>
+`;
+
+exports[`VideoCard > renders list type correctly 1`] = `
+<DocumentFragment>
+  <li
+    class="_playlistWrappers_8ba6ec"
+  >
+    <img
+      alt="title"
+      class="_playlistThumbnailImage_8ba6ec"
+      src="http://image/"
+    />
+    <div
+      class="_playlistDiscriptionWrappers_8ba6ec"
+    >
+      <span
+        class="_discriptionTitle_8ba6ec"
+        title="title"
+      >
+        title
+      </span>
+      <div
+        class="_playlistDiscriptionWrapper_8ba6ec"
+      >
+        <span>
+          channelTitle
+        </span>
+        <span>
+          방금
+        </span>
+      </div>
+    </div>
+  </li>
+</DocumentFragment>
+`;

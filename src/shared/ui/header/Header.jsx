@@ -1,19 +1,19 @@
-import { useState, useRef, useEffect } from 'react';
-import { Link, useNavigate, useParams } from 'react-router';
-import { FiSearch } from 'react-icons/fi';
-import { Popup } from '../popup/Popup.jsx';
-import { Theme } from '../theme/Theme.jsx';
-import clsx from 'clsx';
-import styles from './Header.module.css';
+import { useState, useRef, useEffect } from "react";
+import { Link, useNavigate, useParams } from "react-router";
+import { FiSearch } from "react-icons/fi";
+import { Popup } from "../popup/Popup.jsx";
+import { Theme } from "../theme/Theme.jsx";
+import clsx from "clsx";
+import styles from "./Header.module.css";
 
 export function Header() {
   const { keyword, videoId } = useParams();
   const navigate = useNavigate();
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    setText(keyword || '');
+    setText(keyword || "");
   }, [keyword]);
 
   const containerRef = useRef(null);
@@ -60,7 +60,7 @@ export function Header() {
             value={text}
             onChange={(e) => setText(e.target.value)}
           />
-          <button type="submit" className={styles.formButton}>
+          <button type="submit" className={styles.formButton} aria-label="검색">
             <FiSearch />
           </button>
         </form>
@@ -68,7 +68,7 @@ export function Header() {
       </div>
       <div
         className={clsx(styles.buttonContainer, {
-          [styles.none]: videoId
+          [styles.none]: videoId,
         })}
         ref={containerRef}
         onMouseDown={handleMouseDown}
@@ -86,20 +86,25 @@ export function Header() {
           </button>
         ))}
       </div>
-      {open && <Popup text='기능을 준비중입니다.' onClose={() => setOpen(false)}></Popup>}
+      {open && (
+        <Popup
+          text="기능을 준비중입니다."
+          onClose={() => setOpen(false)}
+        ></Popup>
+      )}
     </header>
   );
 }
 
 const initialTabList = () => {
   return [
-    '전체',
-    '음악',
-    '믹스',
-    '라이브',
-    '애니메이션',
-    '최근에 업로드된 동영상',
-    '감상한 동영상',
-    '새로운 맞춤 동영상',
+    "전체",
+    "음악",
+    "믹스",
+    "라이브",
+    "애니메이션",
+    "최근에 업로드된 동영상",
+    "감상한 동영상",
+    "새로운 맞춤 동영상",
   ];
 };

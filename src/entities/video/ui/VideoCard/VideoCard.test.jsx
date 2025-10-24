@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { Route, useLocation } from "react-router";
 import { describe, expect, it } from "vitest";
-import { formatAgo } from "../../../../shared/lib/timeago";
+// import { formatAgo } from "../../../../shared/lib/timeago";
 import { withRouter } from "../../../../test/utils";
 import VideoCard from "./VideoCard";
 import userEvent from "@testing-library/user-event";
@@ -9,7 +9,7 @@ import userEvent from "@testing-library/user-event";
 import { fakeVideo as video } from "../../../../test/videos";
 
 describe("VideoCard", () => {
-  const { title, channelTitle, publishedAt, thumbnails } = video.snippet;
+  // const { title, channelTitle, publishedAt, thumbnails } = video.snippet;
   // 정적
   // it("renders video item", () => {
   // 2. 컴포넌트 렌더링(실행)

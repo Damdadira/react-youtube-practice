@@ -151,6 +151,10 @@
 - **통신:** <img src="https://img.shields.io/badge/Axios-%2364f.svg?style=flat-square&logoColor=white" />
 - **API:** YouTube Data API
 - **스타일링:** <img src="https://img.shields.io/badge/CSS_Modules-hotpink.svg?style=flat-square&logoColor=white" />
+- **테스트:**
+  <img src="https://img.shields.io/badge/-Jest-%23C21325?style=flat-square&logo=jest&logoColor=white" />&nbsp;
+  <img src="https://img.shields.io/badge/-Vitest-252529?style=flat-square&logo=vitest&logoColor=FCC72B" />&nbsp;
+  <img src="https://img.shields.io/badge/-TestingLibrary-%23E33332?style=flat-square&logo=testing-library&logoColor=white" />
 <br/>
 
 #### 🚀 배포 도구

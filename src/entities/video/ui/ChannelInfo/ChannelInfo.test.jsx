@@ -18,12 +18,41 @@ describe("ChannelInfo", () => {
         withRouter(
           <Route path='/' element={<ChannelInfo id="id" name="channel" />}></Route>,
           "/",
-          fakeYoutube  // 세 번째 인자로 전달
+          fakeYoutube  
         )
       )
     );
     await waitFor(() => screen.getByText("channel"));
     expect(fakeYoutube.channelImageURL).toHaveBeenCalledWith("id");
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("renders without URL", () => {
+    fakeYoutube.channelImageURL.mockImplementation(() => {
+      throw new Error("error");
+    });
+    render(
+      withAllContexts(
+        withRouter(
+          <Route path='/' element={<ChannelInfo id="id" name="channel" />}></Route>
+        ),
+        fakeYoutube
+      )
+    );
+    expect(screen.queryByRole("img")).toBeNull();
+  });
+
+  it("renders with URL", async () => {
+    fakeYoutube.channelImageURL.mockResolvedValue("url");
+    render(
+      withAllContexts(
+        withRouter(
+          <Route path='/' element={<ChannelInfo id="id" name="channel" />}></Route>,
+          "/",
+          fakeYoutube
+        )
+      )
+    );
+    expect(await screen.findByRole("img")).toBeInTheDocument();
   });
 });

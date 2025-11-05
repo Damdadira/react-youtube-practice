@@ -9,11 +9,8 @@ describe("ChannelInfo", () => {
     channelImageURL: vi.fn()
   }
 
-  afterEach(() => fakeYoutube.channelImageURL.mockReset());
-
-  it("renders correctly", async () => {
-    fakeYoutube.channelImageURL.mockResolvedValue("url");
-    const { asFragment } = render(
+  const renderChannelInfo = (path ="/") => {
+    return render(
       withAllContexts(
         withRouter(
           <Route path='/' element={<ChannelInfo id="id" name="channel" />}></Route>,
@@ -21,7 +18,15 @@ describe("ChannelInfo", () => {
           fakeYoutube  
         )
       )
-    );
+    )
+  }
+
+  afterEach(() => fakeYoutube.channelImageURL.mockReset());
+
+  it("renders correctly", async () => {
+    fakeYoutube.channelImageURL.mockResolvedValue("url");
+    const { asFragment } = renderChannelInfo();
+
     await waitFor(() => screen.getByText("channel"));
     expect(fakeYoutube.channelImageURL).toHaveBeenCalledWith("id");
     expect(asFragment()).toMatchSnapshot();
@@ -31,28 +36,15 @@ describe("ChannelInfo", () => {
     fakeYoutube.channelImageURL.mockImplementation(() => {
       throw new Error("error");
     });
-    render(
-      withAllContexts(
-        withRouter(
-          <Route path='/' element={<ChannelInfo id="id" name="channel" />}></Route>
-        ),
-        fakeYoutube
-      )
-    );
+
+    renderChannelInfo();
     expect(screen.queryByRole("img")).toBeNull();
   });
 
   it("renders with URL", async () => {
     fakeYoutube.channelImageURL.mockResolvedValue("url");
-    render(
-      withAllContexts(
-        withRouter(
-          <Route path='/' element={<ChannelInfo id="id" name="channel" />}></Route>,
-          "/",
-          fakeYoutube
-        )
-      )
-    );
+    
+    renderChannelInfo();
     expect(await screen.findByRole("img")).toBeInTheDocument();
   });
 });

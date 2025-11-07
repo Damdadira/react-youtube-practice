@@ -1,0 +1,72 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`VideoDetail > renders correctly 1`] = `
+<DocumentFragment>
+  <section
+    class="_videoDetailContainer_06012d"
+  >
+    <article
+      class="_channelContainer_06012d"
+    >
+      <iframe
+        class="_videoPlayer_06012d"
+        id="player"
+        src="https://www.youtube.com/embed/test-video-id"
+        type="text/html"
+      />
+      <div>
+        <div
+          class="_channelInfoContainer_06012d"
+        >
+          <span
+            class="_videoTitle_06012d"
+          >
+            Test Video Title
+          </span>
+          <div
+            class="_channelInfoContainer_819d61"
+          >
+            <img
+              alt="Test Channel"
+              class="_channelInfoImage_819d61"
+              src="url"
+            />
+            <span
+              class="_channelInfoName_819d61"
+            >
+              Test Channel
+            </span>
+          </div>
+        </div>
+        <pre
+          class="_videoDescription_06012d"
+        >
+          Test video description
+        </pre>
+        <div
+          class="_commentsWrappers_20d6b3"
+        >
+          <span
+            class="_commentsTotalCount_20d6b3"
+          >
+            댓글 0개
+          </span>
+          <div
+            class="_commentsWrapper_20d6b3"
+          />
+        </div>
+      </div>
+    </article>
+    <section
+      class="_relatedVideosContainer_06012d"
+    >
+      <div>
+        <ul
+          class="_videosContainer_bfb0ce"
+          role="playlist"
+        />
+      </div>
+    </section>
+  </section>
+</DocumentFragment>
+`;

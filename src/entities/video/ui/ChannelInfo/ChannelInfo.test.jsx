@@ -14,7 +14,7 @@ describe("ChannelInfo", () => {
       withAllContexts(
         withRouter(
           <Route path='/' element={<ChannelInfo id="id" name="channel" />}></Route>,
-          "/",
+          path,
           fakeYoutube  
         )
       )

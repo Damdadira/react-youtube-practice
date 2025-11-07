@@ -15,7 +15,7 @@ describe("RelatedVideos", () => {
       withAllContexts(
         withRouter(
           <Route path="/" element={<RealtedVideos id="test-channel-id" />}></Route>,
-          "/",
+          path,
           fakeYoutube
         ),
         fakeYoutube

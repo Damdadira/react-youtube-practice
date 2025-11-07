@@ -1,0 +1,32 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Loading > renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="_loadingContainer_8c589c"
+  >
+    <div
+      class="_typingIndicator_8c589c"
+    >
+      <div
+        class="_typingCircle_8c589c"
+      />
+      <div
+        class="_typingCircle_8c589c"
+      />
+      <div
+        class="_typingCircle_8c589c"
+      />
+      <div
+        class="_typingShadow_8c589c"
+      />
+      <div
+        class="_typingShadow_8c589c"
+      />
+      <div
+        class="_typingShadow_8c589c"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

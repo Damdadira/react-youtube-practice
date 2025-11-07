@@ -1,0 +1,71 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RelatedVideos > renders correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <ul
+      class="_videosContainer_bfb0ce"
+      role="playlist"
+    >
+      <li
+        class="_playlistWrappers_8ba6ec"
+      >
+        <img
+          alt="title"
+          class="_playlistThumbnailImage_8ba6ec"
+          src="http://image/"
+        />
+        <div
+          class="_playlistDiscriptionWrappers_8ba6ec"
+        >
+          <span
+            class="_discriptionTitle_8ba6ec"
+            title="title"
+          >
+            title
+          </span>
+          <div
+            class="_playlistDiscriptionWrapper_8ba6ec"
+          >
+            <span>
+              channelTitle
+            </span>
+            <span>
+              방금
+            </span>
+          </div>
+        </div>
+      </li>
+      <li
+        class="_playlistWrappers_8ba6ec"
+      >
+        <img
+          alt="title2"
+          class="_playlistThumbnailImage_8ba6ec"
+          src="http://image/"
+        />
+        <div
+          class="_playlistDiscriptionWrappers_8ba6ec"
+        >
+          <span
+            class="_discriptionTitle_8ba6ec"
+            title="title2"
+          >
+            title2
+          </span>
+          <div
+            class="_playlistDiscriptionWrapper_8ba6ec"
+          >
+            <span>
+              channelTitle2
+            </span>
+            <span>
+              방금
+            </span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;

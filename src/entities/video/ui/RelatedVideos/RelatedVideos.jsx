@@ -22,7 +22,7 @@ export default function RealtedVideos({ id }) {
       {isLoading && <Loading></Loading>}
       {error && <Error></Error>}
       {videos && (
-        <ul className={styles.videosContainer}>
+        <ul className={styles.videosContainer} role='playlist'>
           {videos.map((video) => (
             <VideoCard key={video.id} video={video} type='playlist'></VideoCard>
           ))}
